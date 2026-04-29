@@ -78,9 +78,11 @@ export default function Hero() {
 								animationFillMode: 'forwards',
 							}}
 						>
-							Code that looks{' '}
+							Code that{' '}
 							<span className='relative inline-block'>
-								<span className='relative z-10 text-[#F5A623]'>good.</span>
+								<span className='relative z-10 text-[#F5A623]'>
+									looks good.
+								</span>
 								<span
 									className='absolute bottom-1 left-0 right-0 h-3 bg-[#F5A623] opacity-20 rounded'
 									aria-hidden='true'
