@@ -22,7 +22,7 @@ export default function SoftwareCTA() {
 			/>
 
 			<div className='max-w-7xl mx-auto relative'>
-				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+				<div className='grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center'>
 					{/* Left copy */}
 					<div>
 						<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center gap-2 mb-4'>

@@ -71,9 +71,9 @@ export default function Products() {
 								letterSpacing: '-0.02em',
 							}}
 						>
-							Solutions we
+							We don&apos;t do everything.
 							<br />
-							<span className='text-[#F5A623]'>offer</span>
+							<span className='text-[#F5A623]'>We do this well.</span>
 						</h2>
 					</div>
 					<a
