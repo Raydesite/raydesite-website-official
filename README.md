@@ -8,7 +8,7 @@ The project was migrated from an earlier merch/store concept into a software ser
 
 ## Tech Stack
 
-- Next.js 15.1
+- Next.js 15.5
 - React 19
 - TypeScript
 - Tailwind CSS 3.4
@@ -124,4 +124,3 @@ npm start      # Start production server
 - Website: https://raydesite.com
 - Email: hello@raydesite.com
 - GitHub: https://github.com/raydesite
-
