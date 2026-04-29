@@ -77,10 +77,10 @@ export default function Products() {
 						</h2>
 					</div>
 					<a
-						href='#all'
+						href='#quote'
 						className='self-start md:self-auto inline-flex items-center gap-2 font-mono text-sm font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-6 py-3 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
-						View all →
+						Discuss a project →
 					</a>
 				</div>
 
@@ -90,9 +90,10 @@ export default function Products() {
 					role='list'
 				>
 					{products.map((product, i) => (
-						<article
+						<a
 							key={product.id}
-							className='product-card group'
+							href='#quote'
+							className='product-card group block no-underline text-[#1A1A1A]'
 							role='listitem'
 							aria-label={product.name}
 							style={{ animationDelay: `${i * 0.1}s` }}
@@ -152,7 +153,7 @@ export default function Products() {
 									</svg>
 								</div>
 							</div>
-						</article>
+						</a>
 					))}
 				</div>
 

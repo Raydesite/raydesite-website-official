@@ -16,6 +16,8 @@ export default function Hero() {
 	const floatRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
 		const el = floatRef.current;
 		if (!el) return;
 		let frame: number;
@@ -132,7 +134,7 @@ export default function Hero() {
 							{tags.map((tag) => (
 								<span
 									key={tag.label}
-									className='tag-pill cursor-pointer'
+									className='tag-pill'
 									style={{
 										color: tag.textColor,
 										backgroundColor: tag.color,

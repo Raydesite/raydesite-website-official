@@ -1,18 +1,14 @@
 const items = [
-	"🚀 Take your business to the next digital level",
-	"📱 Custom mobile apps, ready to scale",
-	"🛒 Ecommerce that turns visitors into buyers",
-	"⚡ Lightning-fast, secure websites",
-	"💡 Turn your idea into real software",
-	"🤝 Solutions for startups and enterprises",
-	"🔥 Ask for your free demo today!",
-	"🧑‍💻 Built by real experts, for you",
-	"⏰ Launch your project in record time",
-	"⭐ Happy clients, proven results",
+	'🚀 Launch faster',
+	'⚡ Build clean software',
+	'🛒 E-commerce that converts',
+	'📱 Web and mobile apps',
+	'💡 From idea to product',
+	'🧑‍💻 Built by real developers',
 ];
 
 export default function MarqueeTicker() {
-	const repeated = [...items, ...items];
+	const repeated = [...items, ...items, ...items];
 
 	return (
 		<div

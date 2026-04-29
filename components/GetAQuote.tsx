@@ -1,15 +1,23 @@
 'use client'
 
 import { useState } from 'react'
+import type { FormEvent } from 'react'
 
 export default function GetAQuote() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', project: '', quantity: '' })
+  const [error, setError] = useState('')
 
-  const handleSubmit = () => {
-    if (form.name && form.email) {
-      setSubmitted(true)
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    if (!form.name.trim() || !form.email.trim()) {
+      setError('Please add your name and email so we can contact you.')
+      return
     }
+
+    setError('')
+    setSubmitted(true)
   }
 
   return (
@@ -44,12 +52,12 @@ export default function GetAQuote() {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={handleSubmit} noValidate>
               {[
-                { key: 'name', label: 'Your name', placeholder: 'Ada Lovelace', type: 'text' },
-                { key: 'email', label: 'Email', placeholder: 'ada@dev.io', type: 'email' },
-                { key: 'project', label: 'What do you need?', placeholder: 'Landing page, app, store...', type: 'text' },
-                { key: 'quantity', label: 'Project size', placeholder: 'MVP, redesign, full build...', type: 'text' },
+                { key: 'name', label: 'Your name', placeholder: 'Ada Lovelace', type: 'text', required: true, autoComplete: 'name' },
+                { key: 'email', label: 'Email', placeholder: 'ada@dev.io', type: 'email', required: true, autoComplete: 'email' },
+                { key: 'project', label: 'What do you need?', placeholder: 'Landing page, app, store...', type: 'text', required: false, autoComplete: 'off' },
+                { key: 'quantity', label: 'Project size', placeholder: 'MVP, redesign, full build...', type: 'text', required: false, autoComplete: 'off' },
               ].map((field) => (
                 <div key={field.key} className={field.key === 'project' ? 'md:col-span-2' : ''}>
                   <label
@@ -62,6 +70,9 @@ export default function GetAQuote() {
                     id={field.key}
                     type={field.type}
                     placeholder={field.placeholder}
+                    required={field.required}
+                    aria-required={field.required}
+                    autoComplete={field.autoComplete}
                     value={form[field.key as keyof typeof form]}
                     onChange={(e) => setForm({ ...form, [field.key]: e.target.value })}
                     className="w-full border-2 border-[#1A1A1A] rounded-xl px-4 py-3 font-mono text-sm bg-[#F4F3F0] focus:outline-none focus:border-[#F5A623] focus:bg-white transition-all duration-200 placeholder:text-[#8A8680]"
@@ -69,15 +80,21 @@ export default function GetAQuote() {
                 </div>
               ))}
 
+              {error && (
+                <p className="md:col-span-2 text-sm font-mono text-[#BF0A0A]" role="alert">
+                  {error}
+                </p>
+              )}
+
               <div className="md:col-span-2">
                 <button
-                  onClick={handleSubmit}
+                  type="submit"
                   className="w-full bg-[#1A1A1A] text-[#F4F3F0] font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 rounded-full border-2 border-[#1A1A1A] hover:bg-[#F5A623] hover:text-[#1A1A1A] transition-all duration-200 hover:shadow-[4px_4px_0_#1A1A1A]"
                 >
                   Send Request →
                 </button>
               </div>
-            </div>
+            </form>
           )}
         </div>
       </div>

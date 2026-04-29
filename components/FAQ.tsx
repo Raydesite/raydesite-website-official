@@ -69,6 +69,7 @@ export default function FAQ() {
 									onClick={() => setOpen(open === i ? null : i)}
 									className='w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-[#F4F3F0] transition-colors duration-200'
 									aria-expanded={open === i}
+									aria-controls={`faq-panel-${i}`}
 								>
 									<span
 										style={{
@@ -103,6 +104,7 @@ export default function FAQ() {
 							{open === i && (
 								<dd className='px-6 pb-5 bg-white border-t border-[#E5E5E5]'>
 									<p
+										id={`faq-panel-${i}`}
 										className='text-[#8A8680] leading-relaxed pt-4'
 										style={{ fontFamily: 'DM Sans, sans-serif' }}
 									>

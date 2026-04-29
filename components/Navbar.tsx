@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from 'react';
 
+const navItems = [
+	{ label: 'Home', href: '#home' },
+	{ label: 'Services', href: '#products' },
+	{ label: 'Work', href: '#latest' },
+	{ label: 'FAQ', href: '#faq' },
+];
+
 export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +30,7 @@ export default function Navbar() {
 			<nav className='max-w-7xl mx-auto px-6 flex items-center justify-between'>
 				{/* Logo */}
 				<a
-					href='#'
+					href='#home'
 					className='flex items-center gap-2 group'
 					aria-label='Raydesite Home'
 				>
@@ -48,13 +55,13 @@ export default function Navbar() {
 					className='hidden md:flex items-center gap-8'
 					role='navigation'
 				>
-					{['Home', 'Products', 'Categories', 'FAQ'].map((item) => (
-						<li key={item}>
+					{navItems.map((item) => (
+						<li key={item.label}>
 							<a
-								href={`#${item.toLowerCase()}`}
+								href={item.href}
 								className='relative font-mono text-sm font-bold text-[#1A1A1A] uppercase tracking-widest group'
 							>
-								{item}
+								{item.label}
 								<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F5A623] group-hover:w-full transition-all duration-200' />
 							</a>
 						</li>
@@ -82,14 +89,8 @@ export default function Navbar() {
 							stroke='currentColor'
 							strokeWidth='2.5'
 						>
-							<path d='M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z' />
-							<line
-								x1='3'
-								y1='6'
-								x2='21'
-								y2='6'
-							/>
-							<path d='M16 10a4 4 0 0 1-8 0' />
+							<path d='M5 12h14' />
+							<path d='M13 5l7 7-7 7' />
 						</svg>
 						Get a Quote
 					</a>
@@ -100,6 +101,8 @@ export default function Navbar() {
 					className='md:hidden p-2 rounded-md border-2 border-[#1A1A1A]'
 					onClick={() => setMenuOpen(!menuOpen)}
 					aria-label='Toggle menu'
+					aria-expanded={menuOpen}
+					aria-controls='mobile-menu'
 				>
 					<div
 						className='w-5 h-0.5 bg-[#1A1A1A] mb-1 transition-all'
@@ -122,16 +125,19 @@ export default function Navbar() {
 
 			{/* Mobile drawer */}
 			{menuOpen && (
-				<div className='md:hidden bg-[#F4F3F0] border-t-2 border-[#1A1A1A] px-6 py-6'>
+				<div
+					id='mobile-menu'
+					className='md:hidden bg-[#F4F3F0] border-t-2 border-[#1A1A1A] px-6 py-6'
+				>
 					<ul className='flex flex-col gap-4 mb-6'>
-						{['Home', 'Products', 'Categories', 'FAQ'].map((item) => (
-							<li key={item}>
+						{navItems.map((item) => (
+							<li key={item.label}>
 								<a
-									href={`#${item.toLowerCase()}`}
+									href={item.href}
 									className='font-mono font-bold text-lg uppercase tracking-widest text-[#1A1A1A] hover:text-[#F5A623] transition-colors'
 									onClick={() => setMenuOpen(false)}
 								>
-									{item}
+									{item.label}
 								</a>
 							</li>
 						))}

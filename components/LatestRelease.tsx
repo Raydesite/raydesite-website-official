@@ -25,9 +25,11 @@ export default function LatestRelease() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {releases.map((item, i) => (
-            <article
+            <a
               key={item.id}
-              className="flex items-center gap-6 bg-white border-2 border-[#1A1A1A] rounded-2xl p-6 hover:shadow-[6px_6px_0_#1A1A1A] hover:-translate-y-1 transition-all duration-200 cursor-pointer group"
+              href="#quote"
+              className="flex items-center gap-6 bg-white border-2 border-[#1A1A1A] rounded-2xl p-6 hover:shadow-[6px_6px_0_#1A1A1A] hover:-translate-y-1 transition-all duration-200 group no-underline text-[#1A1A1A]"
+              aria-label={`Discuss a ${item.name} project`}
             >
               <div
                 className="w-20 h-20 rounded-xl flex items-center justify-center text-4xl flex-shrink-0 border-2 border-[#1A1A1A] group-hover:scale-110 transition-transform duration-200"
@@ -52,7 +54,7 @@ export default function LatestRelease() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </div>

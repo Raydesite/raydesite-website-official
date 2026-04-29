@@ -1,8 +1,28 @@
 const footerLinks = {
-  Services: ['Landing Pages', 'E-commerce', 'Web Apps', 'Mobile Apps', 'Shopify'],
-  Company: ['About Us', 'Process', 'Work', 'Careers'],
-  Support: ['FAQ', 'Discovery Call', 'Maintenance', 'Get a Quote'],
-  Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'],
+  Services: [
+    { label: 'Landing Pages', href: '#products' },
+    { label: 'E-commerce', href: '#products' },
+    { label: 'Web Apps', href: '#products' },
+    { label: 'Mobile Apps', href: '#products' },
+    { label: 'Shopify', href: '#products' },
+  ],
+  Company: [
+    { label: 'About Us', href: '#home' },
+    { label: 'Process', href: '#quote' },
+    { label: 'Work', href: '#latest' },
+    { label: 'Careers', href: 'mailto:hello@raydesite.com' },
+  ],
+  Support: [
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Discovery Call', href: '#quote' },
+    { label: 'Maintenance', href: '#quote' },
+    { label: 'Get a Quote', href: '#quote' },
+  ],
+  Legal: [
+    { label: 'Privacy Policy', href: 'mailto:hello@raydesite.com' },
+    { label: 'Terms of Service', href: 'mailto:hello@raydesite.com' },
+    { label: 'Cookie Policy', href: 'mailto:hello@raydesite.com' },
+  ],
 }
 
 export default function Footer() {
@@ -54,13 +74,13 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3" role="list">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-[#8A8680] hover:text-[#F4F3F0] transition-colors duration-150 text-sm"
                       style={{ fontFamily: 'DM Sans, sans-serif' }}
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -80,7 +100,7 @@ export default function Footer() {
               {['𝕏', 'in', 'gh'].map((icon) => (
                 <a
                   key={icon}
-                  href="#"
+                  href={`https://${icon === '𝕏' ? 'x.com' : icon === 'in' ? 'linkedin.com' : 'github.com'}/raydesite`}
                   className="w-8 h-8 border border-[#3A3A3A] rounded-full flex items-center justify-center font-mono text-xs text-[#8A8680] hover:border-[#F5A623] hover:text-[#F5A623] transition-all duration-150"
                   aria-label={icon}
                 >
