@@ -3,14 +3,14 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import MarqueeTicker from '@/components/MarqueeTicker';
 import Products from '@/components/Products';
-import FullSwagCTA from '@/components/FullSwagCTA';
+import SoftwareCTA from '@/components/SoftwareCTA';
 import LatestRelease from '@/components/LatestRelease';
 import GetAQuote from '@/components/GetAQuote';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-	title: 'Raydesite — Software solutions for everyone',
+	title: 'Raydesite: Software solutions for everyone',
 };
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
 			<Hero />
 			<MarqueeTicker />
 			<Products />
-			<FullSwagCTA />
+			<SoftwareCTA />
 			<LatestRelease />
 			<GetAQuote />
 			<FAQ />

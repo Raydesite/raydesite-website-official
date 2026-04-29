@@ -3,11 +3,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Raydesite — Software solutions for everyone',
+		default: 'Raydesite: Software solutions for everyone',
 		template: '%s | Raydesite',
 	},
 	description:
-		'Stickers, pines, gorras y camisetas diseñadas por developers para developers. Merch otaku, geek, Star Wars y más. Conviértete en un Full-Swag Developer.',
+		'Custom software development for startups, creators, and businesses. We build landing pages, online stores, web apps, mobile apps, and scalable digital products.',
 	keywords: [
 		'Landing Page',
 		'Online Store',
@@ -25,23 +25,23 @@ export const metadata: Metadata = {
 		locale: 'es_ES',
 		url: 'https://raydesite.com',
 		siteName: 'Raydesite',
-		title: 'Raydesite — Software solutions for everyone',
+		title: 'Raydesite: Software solutions for everyone',
 		description:
-			'Stickers, pines, gorras y camisetas diseñadas por developers para developers.',
+			'Custom software development for landing pages, e-commerce, web apps, mobile apps, Shopify, and automation.',
 		images: [
 			{
 				url: '/og-image.png',
 				width: 1200,
 				height: 630,
-				alt: 'Raydesite — Software solutions for everyone',
+				alt: 'Raydesite: Software solutions for everyone',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Raydesite — Software solutions for everyone',
+		title: 'Raydesite: Software solutions for everyone',
 		description:
-			'Stickers, pines, gorras y camisetas diseñadas por developers para developers.',
+			'Custom software development for modern businesses and digital products.',
 		images: ['/og-image.png'],
 	},
 	robots: {
@@ -89,31 +89,32 @@ export default function RootLayout({
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify({
 							'@context': 'https://schema.org',
-							'@type': 'Store',
+							'@type': 'ProfessionalService',
 							name: 'Raydesite',
-							description: 'Merch made for developers by developers',
+							description:
+								'Custom software development services for businesses and digital products',
 							url: 'https://raydesite.com',
 							logo: 'https://raydesite.com/logo.png',
 							sameAs: [],
 							hasOfferCatalog: {
 								'@type': 'OfferCatalog',
-								name: 'Landing Page',
+								name: 'Software development services',
 								itemListElement: [
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Product', name: 'Stickers' },
+										itemOffered: { '@type': 'Service', name: 'Landing Pages' },
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Product', name: 'Pines' },
+										itemOffered: { '@type': 'Service', name: 'E-commerce Development' },
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Product', name: 'Gorras' },
+										itemOffered: { '@type': 'Service', name: 'Web and Mobile Apps' },
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Product', name: 'Camisetas' },
+										itemOffered: { '@type': 'Service', name: 'Shopify Development' },
 									},
 								],
 							},

@@ -1,4 +1,4 @@
-export default function FullSwagCTA() {
+export default function SoftwareCTA() {
   return (
     <section
       id="cta"
@@ -32,21 +32,20 @@ export default function FullSwagCTA() {
               className="text-[#F4F3F0] mb-6"
               style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}
             >
-              Become a{' '}
-              <span className="text-[#F5A623]">Full-Swag</span>
+              Build software{' '}
+              <span className="text-[#F5A623]">that ships</span>
               <br />
-              developer.
+              with clarity.
             </h2>
             <p className="text-[#8A8680] text-lg leading-relaxed mb-8 max-w-md" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              Únete a miles de developers que ya llevan su código con estilo. 
-              Porque el merch también es parte del stack.
+              From landing pages to full digital products, we help you turn rough ideas into reliable software people can actually use.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="#products"
                 className="inline-flex items-center gap-3 bg-[#F5A623] text-[#1A1A1A] font-mono font-bold text-sm uppercase tracking-widest px-7 py-4 rounded-full border-2 border-[#F5A623] hover:bg-transparent hover:text-[#F5A623] transition-all duration-200 hover:shadow-[4px_4px_0_#F5A623]"
               >
-                Shop all products →
+                Start your project →
               </a>
             </div>
 
@@ -64,7 +63,7 @@ export default function FullSwagCTA() {
               </div>
               <div>
                 <div className="text-[#F5A623] font-mono font-bold text-sm">⭐⭐⭐⭐⭐</div>
-                <div className="text-[#8A8680] font-mono text-xs uppercase tracking-widest">+10K developers felices</div>
+                <div className="text-[#8A8680] font-mono text-xs uppercase tracking-widest">Trusted software delivery</div>
               </div>
             </div>
           </div>
@@ -116,10 +115,10 @@ export default function FullSwagCTA() {
 
               {/* Floating badges */}
               <div className="absolute -top-4 -left-8 bg-[#F5A623] border-2 border-[#1A1A1A] rounded-xl px-4 py-2 shadow-[3px_3px_0_#1A1A1A]">
-                <span className="font-mono font-bold text-xs text-[#1A1A1A]">git commit -m "🔥 swag"</span>
+                <span className="font-mono font-bold text-xs text-[#1A1A1A]">deploy: production ready</span>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-[#2A2A2A] border-2 border-[#F5A623] rounded-xl px-4 py-2">
-                <span className="font-mono font-bold text-xs text-[#F5A623]">// TODO: buy more stickers</span>
+                <span className="font-mono font-bold text-xs text-[#F5A623]">// TODO: scale with confidence</span>
               </div>
             </div>
           </div>

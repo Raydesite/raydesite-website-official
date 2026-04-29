@@ -1,8 +1,8 @@
 const releases = [
-  { id: 1, name: 'Mandalorian Pack', category: 'Star Wars', emoji: '🪖', isNew: true, color: '#E8DCC2' },
-  { id: 2, name: 'React Hooks Set', category: 'Developer', emoji: '⚛️', isNew: true, color: '#C2D8E8' },
-  { id: 3, name: 'Evangelion Pin', category: 'Otaku Geek', emoji: '🤖', isNew: false, color: '#E8C2D4' },
-  { id: 4, name: 'Dark Mode Tee', category: 'Clothes', emoji: '🌙', isNew: false, color: '#D4E8C2' },
+  { id: 1, name: 'SaaS MVP', category: 'Startup', emoji: '🚀', isNew: true, color: '#E8DCC2' },
+  { id: 2, name: 'Internal Dashboard', category: 'Operations', emoji: '📊', isNew: true, color: '#C2D8E8' },
+  { id: 3, name: 'Shopify Storefront', category: 'Commerce', emoji: '🛒', isNew: false, color: '#E8C2D4' },
+  { id: 4, name: 'Mobile Booking App', category: 'Mobile', emoji: '📱', isNew: false, color: '#D4E8C2' },
 ]
 
 export default function LatestRelease() {
@@ -12,14 +12,14 @@ export default function LatestRelease() {
         <div className="text-center mb-16">
           <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center justify-center gap-2 mb-3">
             <span className="w-6 h-0.5 bg-[#F5A623]" />
-            Just dropped
+            Recent work
             <span className="w-6 h-0.5 bg-[#F5A623]" />
           </span>
           <h2
             id="latest-heading"
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.02em' }}
           >
-            Latest Release
+            Latest Work
           </h2>
         </div>
 

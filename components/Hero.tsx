@@ -395,7 +395,7 @@ export default function Hero() {
 										strokeLinecap='round'
 										opacity='0.6'
 									/>
-									{/* Sticker on desk */}
+									{/* Badge on desk */}
 									<rect
 										x='75'
 										y='178'
@@ -456,9 +456,9 @@ export default function Hero() {
 								{/* Badge */}
 								<div className='absolute -top-4 -right-4 bg-[#F5A623] border-2 border-[#1A1A1A] rounded-full w-16 h-16 flex items-center justify-center shadow-[3px_3px_0_#1A1A1A]'>
 									<span className='font-mono font-bold text-xs text-center leading-tight text-[#1A1A1A]'>
-										NEW
+										MVP
 										<br />
-										DROP
+										READY
 									</span>
 								</div>
 							</div>
@@ -466,13 +466,13 @@ export default function Hero() {
 							{/* Floating mini card */}
 							<div className='absolute -bottom-6 -left-8 bg-[#1A1A1A] text-[#F4F3F0] rounded-2xl px-4 py-3 border-2 border-[#F5A623] shadow-[4px_4px_0_#F5A623]'>
 								<p className='font-mono text-xs text-[#F5A623] uppercase tracking-widest mb-0.5'>
-									Latest Drop
+									Project Sprint
 								</p>
 								<p
 									className='font-display font-bold text-sm'
 									style={{ fontFamily: 'Syne, sans-serif' }}
 								>
-									Star Wars Collab 🚀
+									Launch plan ready 🚀
 								</p>
 							</div>
 						</div>

@@ -64,15 +64,15 @@ export default function Navbar() {
 				{/* Actions */}
 				<div className='hidden md:flex items-center gap-3'>
 					<a
-						href='#register'
+						href='#products'
 						className='font-mono text-xs font-bold uppercase tracking-widest text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
-						Register
+						Services
 					</a>
 					<a
-						href='#bag'
+						href='#quote'
 						className='relative font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F5A623] transition-all duration-200 flex items-center gap-2'
-						aria-label='My Bag'
+						aria-label='Get a Quote'
 					>
 						<svg
 							width='14'
@@ -91,10 +91,7 @@ export default function Navbar() {
 							/>
 							<path d='M16 10a4 4 0 0 1-8 0' />
 						</svg>
-						Contact
-						<span className='absolute -top-2 -right-2 w-5 h-5 bg-[#1A1A1A] text-[#F5A623] text-xs rounded-full flex items-center justify-center font-mono font-bold'>
-							0
-						</span>
+						Get a Quote
 					</a>
 				</div>
 
@@ -141,16 +138,16 @@ export default function Navbar() {
 					</ul>
 					<div className='flex gap-3'>
 						<a
-							href='#register'
+							href='#products'
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
 						>
-							Register
+							Services
 						</a>
 						<a
-							href='#bag'
+							href='#quote'
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
 						>
-							My Bag
+							Get Quote
 						</a>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 const footerLinks = {
-  Shop: ['Stickers', 'Pines', 'Gorras', 'Camisetas', 'Latest Release'],
-  Company: ['About Us', 'Blog', 'Careers', 'Press'],
-  Support: ['FAQ', 'Shipping', 'Returns', 'Get a Quote'],
+  Services: ['Landing Pages', 'E-commerce', 'Web Apps', 'Mobile Apps', 'Shopify'],
+  Company: ['About Us', 'Process', 'Work', 'Careers'],
+  Support: ['FAQ', 'Discovery Call', 'Maintenance', 'Get a Quote'],
   Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'],
 }
 
@@ -24,12 +24,12 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-[#8A8680] leading-relaxed mb-6 max-w-xs" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-              Merch hecho por developers, para developers. Porque el estilo también es parte del workflow.
+              Custom software for startups, creators, and businesses that need clean execution, not empty promises.
             </p>
             {/* Newsletter */}
             <div>
               <p className="font-mono text-xs font-bold uppercase tracking-widest text-[#8A8680] mb-3">
-                Subscribe for drops
+                Get project notes
               </p>
               <div className="flex gap-2">
                 <input

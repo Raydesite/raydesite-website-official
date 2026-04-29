@@ -18,7 +18,7 @@ export default function GetAQuote() {
         <div className="text-center mb-16">
           <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center justify-center gap-2 mb-3">
             <span className="w-6 h-0.5 bg-[#F5A623]" />
-            Bulk orders
+            Project inquiry
             <span className="w-6 h-0.5 bg-[#F5A623]" />
           </span>
           <h2
@@ -28,7 +28,7 @@ export default function GetAQuote() {
             Get a <span className="text-[#F5A623]">Quote</span>
           </h2>
           <p className="text-[#8A8680] mt-4 text-lg" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-            ¿Hackathon, empresa o evento? Órdenes personalizadas con tu branding.
+            Tell us what you want to build. We will help you shape the right software plan.
           </p>
         </div>
 
@@ -37,19 +37,19 @@ export default function GetAQuote() {
             <div className="text-center py-12">
               <div className="text-6xl mb-6">🎉</div>
               <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: '1.75rem' }} className="mb-3">
-                ¡Recibido!
+                Request received!
               </h3>
               <p className="text-[#8A8680]" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-                Te contactamos en menos de 24 horas. Mientras tanto, sigue pusheando código. 🚀
+                We will contact you within 24 hours. In the meantime, keep building. 🚀
               </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { key: 'name', label: 'Tu nombre', placeholder: 'Ada Lovelace', type: 'text' },
+                { key: 'name', label: 'Your name', placeholder: 'Ada Lovelace', type: 'text' },
                 { key: 'email', label: 'Email', placeholder: 'ada@dev.io', type: 'email' },
-                { key: 'project', label: '¿Qué necesitas?', placeholder: 'Stickers para hackathon...', type: 'text' },
-                { key: 'quantity', label: 'Cantidad estimada', placeholder: '100, 500, 1000+', type: 'text' },
+                { key: 'project', label: 'What do you need?', placeholder: 'Landing page, app, store...', type: 'text' },
+                { key: 'quantity', label: 'Project size', placeholder: 'MVP, redesign, full build...', type: 'text' },
               ].map((field) => (
                 <div key={field.key} className={field.key === 'project' ? 'md:col-span-2' : ''}>
                   <label
