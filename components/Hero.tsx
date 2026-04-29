@@ -1,32 +1,33 @@
-'use client'
+'use client';
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 
 const tags = [
-  { label: 'Technologies', color: '#D4E8C2', textColor: '#2D5A1B' },
-  { label: 'Clothes', color: '#C2D8E8', textColor: '#1B3D5A' },
-  { label: 'Developer', color: '#C2E8D4', textColor: '#1B5A3D' },
-  { label: 'Otaku Geek', color: '#E8C2D4', textColor: '#5A1B3D' },
-  { label: 'Originales', color: '#F5A623', textColor: '#1A1A1A' },
-  { label: 'Star Wars', color: '#E8DCC2', textColor: '#5A4A1B' },
-]
+  { label: 'Landing Page', color: '#D4E8C2', textColor: '#2D5A1B' },
+  { label: 'Online Store', color: '#C2D8E8', textColor: '#1B3D5A' },
+  { label: 'Apps', color: '#C2E8D4', textColor: '#1B5A3D' },
+  { label: 'E-Commerce', color: '#E8C2D4', textColor: '#5A1B3D' },
+  { label: 'Website', color: '#F5A623', textColor: '#1A1A1A' },
+  { label: 'Mobile', color: '#E8DCC2', textColor: '#5A4A1B' },
+  { label: 'Shopify', color: '#EBA8A8', textColor: '#BF0A0A' },
+];
 
 export default function Hero() {
-  const floatRef = useRef<HTMLDivElement>(null)
+  const floatRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = floatRef.current
-    if (!el) return
-    let frame: number
-    let t = 0
+    const el = floatRef.current;
+    if (!el) return;
+    let frame: number;
+    let t = 0;
     const animate = () => {
-      t += 0.02
-      el.style.transform = `translateY(${Math.sin(t) * 10}px) rotate(${Math.sin(t * 0.5) * 2}deg)`
-      frame = requestAnimationFrame(animate)
-    }
-    frame = requestAnimationFrame(animate)
-    return () => cancelAnimationFrame(frame)
-  }, [])
+      t += 0.02;
+      el.style.transform = `translateY(${Math.sin(t) * 10}px) rotate(${Math.sin(t * 0.5) * 2}deg)`;
+      frame = requestAnimationFrame(animate);
+    };
+    frame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   return (
     <section
@@ -219,5 +220,5 @@ export default function Hero() {
         </svg>
       </div>
     </section>
-  )
+  );
 }
