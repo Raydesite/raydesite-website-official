@@ -62,7 +62,7 @@ export default function Hero() {
 						>
 							<span className='w-8 h-0.5 bg-[#F5A623]' />
 							<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680]'>
-								Est. 2020 · Made with ❤️ & caffeine
+								OPEN FOR PROJECTS · 2026
 							</span>
 						</div>
 
@@ -78,17 +78,17 @@ export default function Hero() {
 								animationFillMode: 'forwards',
 							}}
 						>
-							Software{' '}
+							Code that looks{' '}
 							<span className='relative inline-block'>
-								<span className='relative z-10 text-[#F5A623]'>solutions</span>
+								<span className='relative z-10 text-[#F5A623]'>good.</span>
 								<span
 									className='absolute bottom-1 left-0 right-0 h-3 bg-[#F5A623] opacity-20 rounded'
 									aria-hidden='true'
 								/>
 							</span>{' '}
-							for
+							Ships
 							<br />
-							<span className='text-[#F5A623]'>everyone</span>
+							<span className='text-[#F5A623]'>even </span>better.
 						</h1>
 
 						<p
@@ -98,9 +98,8 @@ export default function Hero() {
 								animationFillMode: 'forwards',
 							}}
 						>
-							Software that adapts to you. Intuitive solutions for individuals
-							and companies that want to optimize their work without
-							complications.
+							We&apos;re developers who care about design. We build clean,
+							production-ready software — no templates, no handoffs, no fluff.
 						</p>
 
 						{/* CTAs */}
@@ -112,16 +111,16 @@ export default function Hero() {
 								href='#products'
 								className='group inline-flex items-center gap-3 bg-[#1A1A1A] text-[#F4F3F0] font-mono font-bold text-sm uppercase tracking-widest px-7 py-4 rounded-full border-2 border-[#1A1A1A] hover:bg-[#F5A623] hover:text-[#1A1A1A] transition-all duration-200 hover:shadow-[4px_4px_0_#1A1A1A]'
 							>
-								Contact now
+								Start a project
 								<span className='group-hover:translate-x-1 transition-transform duration-200'>
 									→
 								</span>
 							</a>
 							<a
-								href='#quote'
+								href='#latest'
 								className='inline-flex items-center gap-2 font-mono font-bold text-sm uppercase tracking-widest px-7 py-4 rounded-full border-2 border-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 							>
-								Get a Quote
+								See our work
 							</a>
 						</div>
 
@@ -458,9 +457,9 @@ export default function Hero() {
 								{/* Badge */}
 								<div className='absolute -top-4 -right-4 bg-[#F5A623] border-2 border-[#1A1A1A] rounded-full w-16 h-16 flex items-center justify-center shadow-[3px_3px_0_#1A1A1A]'>
 									<span className='font-mono font-bold text-xs text-center leading-tight text-[#1A1A1A]'>
-										MVP
+										OPEN
 										<br />
-										READY
+										FOR WORK
 									</span>
 								</div>
 							</div>
@@ -468,13 +467,13 @@ export default function Hero() {
 							{/* Floating mini card */}
 							<div className='absolute -bottom-6 -left-8 bg-[#1A1A1A] text-[#F4F3F0] rounded-2xl px-4 py-3 border-2 border-[#F5A623] shadow-[4px_4px_0_#F5A623]'>
 								<p className='font-mono text-xs text-[#F5A623] uppercase tracking-widest mb-0.5'>
-									Project Sprint
+									Launch plan ready
 								</p>
 								<p
 									className='font-display font-bold text-sm'
 									style={{ fontFamily: 'Syne, sans-serif' }}
 								>
-									Launch plan ready 🚀
+									ready to ship 🚀
 								</p>
 							</div>
 						</div>
