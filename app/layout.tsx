@@ -1,48 +1,74 @@
 import type { Metadata } from 'next';
+import { Syne, DM_Sans, Space_Mono } from 'next/font/google';
 import './globals.css';
+
+const syne = Syne({
+	subsets: ['latin'],
+	weight: ['400', '500', '600', '700', '800'],
+	variable: '--font-display',
+	display: 'swap',
+});
+
+const dmSans = DM_Sans({
+	subsets: ['latin'],
+	weight: ['300', '400', '500'],
+	variable: '--font-body',
+	display: 'swap',
+});
+
+const spaceMono = Space_Mono({
+	subsets: ['latin'],
+	weight: ['400', '700'],
+	variable: '--font-mono',
+	display: 'swap',
+});
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Raydesite: Software solutions for everyone',
+		default: 'Raydesite — Code that looks good. Ships even better',
 		template: '%s | Raydesite',
 	},
 	description:
-		'Custom software development for startups, creators, and businesses. We build landing pages, online stores, web apps, mobile apps, and scalable digital products.',
+		'Raydesite is a software development studio that builds landing pages, e-commerce stores, web apps, mobile apps, and Shopify storefronts. Clean code, sharp design, production-ready.',
 	keywords: [
-		'Landing Page',
-		'Online Store',
-		'Apps',
-		'E-Commerce',
-		'Website',
-		'Mobile',
-		'Shopify',
+		'custom software development',
+		'Next.js development agency',
+		'Shopify developer',
+		'landing page development',
+		'e-commerce development',
+		'web app development',
+		'mobile app development',
+		'software studio',
+		'freelance developer',
 		'Raydesite',
 	],
-	authors: [{ name: 'Raydesite' }],
+	authors: [{ name: 'Raydesite', url: 'https://raydesite.com' }],
 	creator: 'Raydesite',
 	openGraph: {
 		type: 'website',
-		locale: 'es_ES',
+		locale: 'en_US',
 		url: 'https://raydesite.com',
 		siteName: 'Raydesite',
-		title: 'Raydesite: Software solutions for everyone',
+		title: 'Raydesite — Code that looks good. Ships even better',
 		description:
-			'Custom software development for landing pages, e-commerce, web apps, mobile apps, Shopify, and automation.',
+			'Software studio building landing pages, e-commerce, web apps, mobile apps, and Shopify storefronts. Clean code, sharp design.',
 		images: [
 			{
 				url: '/og-image.png',
 				width: 1200,
 				height: 630,
-				alt: 'Raydesite: Software solutions for everyone',
+				alt: 'Raydesite — Code that looks good. Ships even better',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Raydesite: Software solutions for everyone',
+		title: 'Raydesite — Code that looks good. Ships even better',
 		description:
-			'Custom software development for modern businesses and digital products.',
+			'Software studio building landing pages, e-commerce, web apps, and mobile apps. Clean code, sharp design.',
 		images: ['/og-image.png'],
+		site: '@raydesite',
+		creator: '@raydesite',
 	},
 	robots: {
 		index: true,
@@ -61,6 +87,9 @@ export const metadata: Metadata = {
 	},
 	manifest: '/site.webmanifest',
 	metadataBase: new URL('https://raydesite.com'),
+	alternates: {
+		canonical: 'https://raydesite.com',
+	},
 };
 
 export default function RootLayout({
@@ -69,21 +98,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='es'>
+		<html
+			lang='en'
+			className={`${syne.variable} ${dmSans.variable} ${spaceMono.variable}`}
+		>
 			<head>
-				<link
-					rel='preconnect'
-					href='https://fonts.googleapis.com'
-				/>
-				<link
-					rel='preconnect'
-					href='https://fonts.gstatic.com'
-					crossOrigin='anonymous'
-				/>
-				<link
-					href='https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap'
-					rel='stylesheet'
-				/>
 				<script
 					type='application/ld+json'
 					dangerouslySetInnerHTML={{
@@ -95,26 +114,56 @@ export default function RootLayout({
 								'Custom software development services for businesses and digital products',
 							url: 'https://raydesite.com',
 							logo: 'https://raydesite.com/logo.png',
-							sameAs: [],
+							sameAs: [
+								'https://www.instagram.com/raydesite',
+								'https://www.tiktok.com/@raydesite.dev',
+								'https://github.com/raydesite',
+							],
+							contactPoint: {
+								'@type': 'ContactPoint',
+								email: 'raydesite@gmail.com',
+								contactType: 'customer support',
+								availableLanguage: ['English', 'Spanish'],
+							},
 							hasOfferCatalog: {
 								'@type': 'OfferCatalog',
 								name: 'Software development services',
 								itemListElement: [
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Service', name: 'Landing Pages' },
+										itemOffered: {
+											'@type': 'Service',
+											name: 'Landing Pages Development',
+											description:
+												'Fast, focused pages for launches, campaigns, and products.',
+										},
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Service', name: 'E-commerce Development' },
+										itemOffered: {
+											'@type': 'Service',
+											name: 'E-commerce Development',
+											description:
+												'Online stores built to convert visitors into customers.',
+										},
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Service', name: 'Web and Mobile Apps' },
+										itemOffered: {
+											'@type': 'Service',
+											name: 'Web and Mobile Apps',
+											description:
+												'Production-ready web and mobile applications.',
+										},
 									},
 									{
 										'@type': 'Offer',
-										itemOffered: { '@type': 'Service', name: 'Shopify Development' },
+										itemOffered: {
+											'@type': 'Service',
+											name: 'Shopify Development',
+											description:
+												'Custom Shopify storefronts, theme improvements, and integrations.',
+										},
 									},
 								],
 							},

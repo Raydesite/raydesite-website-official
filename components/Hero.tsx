@@ -52,7 +52,7 @@ export default function Hero() {
 			<div className='absolute bottom-0 left-1/4 w-64 h-64 bg-[#F5A623] rounded-full opacity-5 blur-2xl pointer-events-none' />
 
 			<div className='max-w-7xl mx-auto px-6 w-full'>
-				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 items-center'>
+				<div className='grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-center'>
 					{/* Left — Copy */}
 					<div>
 						{/* Eyebrow */}
@@ -72,7 +72,7 @@ export default function Hero() {
 							style={{
 								fontFamily: 'Syne, sans-serif',
 								fontWeight: 800,
-								fontSize: 'clamp(3rem, 7vw, 5.5rem)',
+								fontSize: 'clamp(2.5rem, 5vw, 4rem)',
 								lineHeight: 1.0,
 								letterSpacing: '-0.02em',
 								animationFillMode: 'forwards',

@@ -2,12 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
-
 :root {
-	--font-display: 'Syne', sans-serif;
-	--font-body: 'DM Sans', sans-serif;
-	--font-mono: 'Space Mono', monospace;
 	--accent: #f5a623;
 	--ink: #1a1a1a;
 	--paper: #f4f3f0;
