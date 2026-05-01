@@ -19,9 +19,9 @@ const footerLinks = {
     { label: "Get a Quote", href: "#quote" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "mailto:hello@raydesite.com" },
-    { label: "Terms of Service", href: "mailto:hello@raydesite.com" },
-    { label: "Cookie Policy", href: "mailto:hello@raydesite.com" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
   ],
 };
 
