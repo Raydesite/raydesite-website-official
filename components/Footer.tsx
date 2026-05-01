@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "About Us", href: "/about-us" },
     { label: "Process", href: "#quote" },
     { label: "Work", href: "#latest" },
-    { label: "Careers", href: "mailto:hello@raydesite.com" },
+    { label: "Careers", href: "mailto:raydesite@gmail.com" },
   ],
   Support: [
     { label: "FAQ", href: "#faq" },
