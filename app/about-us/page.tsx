@@ -261,7 +261,7 @@ export default function AboutUs() {
               {[
                 { label: "Founded", value: "Nov 2019" },
                 { label: "Team", value: "2 engineers" },
-                { label: "Stack", value: "Next.js · Shopify · Tailwind · TS" },
+                { label: "Stack", value: "Next.js · Shopify · Tailwind" },
                 { label: "Status", value: "🟢 Open for projects" },
               ].map((stat) => (
                 <div
