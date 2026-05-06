@@ -171,22 +171,8 @@ export default function Navbar() {
 			{menuOpen && (
 				<div
 					id='mobile-menu'
-					className='md:hidden bg-[#F4F3F0] border-t-2 border-[#1A1A1A] px-6 py-6'
+					className='md:hidden bg-[#F4F3F0] border-t-2 border-[#1A1A1A] px-6 py-6 mt-3'
 				>
-					{/* Mobile logo */}
-					<div className='flex items-center gap-2 mb-6 pb-6 border-b border-[#E5E5E5]'>
-						<div className='w-9 h-9 bg-[#1A1A1A] rounded-md flex items-center justify-center overflow-hidden'>
-							<RaydesiteBolt size={20} />
-						</div>
-						<Image
-							src='/logo-raydesite.png'
-							alt='Raydesite'
-							width={150}
-							height={44}
-							className='h-10 w-auto object-contain mix-blend-multiply'
-						/>
-					</div>
-
 					<ul className='flex flex-col gap-4 mb-6'>
 						{navItems.map((item) => (
 							<li key={item.label}>
