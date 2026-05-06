@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const navItems = [
 	{ label: 'Home', href: '#home' },
@@ -8,6 +9,47 @@ const navItems = [
 	{ label: 'Work', href: '#latest' },
 	{ label: 'FAQ', href: '#faq' },
 ];
+
+function RaydesiteBolt({ size = 28 }: { size?: number }) {
+	return (
+		<svg
+			width={size}
+			height={size * (100 / 66)}
+			viewBox='0 0 66 100'
+			fill='none'
+			xmlns='http://www.w3.org/2000/svg'
+			aria-hidden='true'
+		>
+			<path
+				opacity='0.12'
+				d='M43.4722 0.511475L0.511414 53.701H27.1062L16.8774 96.6618L61.884 40.4036H35.2892L43.4722 0.511475Z'
+				fill='#F5A623'
+			/>
+			<path
+				opacity='0.3'
+				d='M47.5637 5.62585L4.60291 58.8154H31.1977L20.9689 101.776L65.9755 45.518H39.3807L47.5637 5.62585Z'
+				fill='#E09010'
+			/>
+			<path
+				d='M43.4722 0.511475L0.511414 53.701H27.1062L16.8774 96.6618L61.884 40.4036H35.2892L43.4722 0.511475Z'
+				fill='#F5A623'
+				stroke='#F5A623'
+				strokeWidth='1.02288'
+				strokeLinejoin='round'
+			/>
+			<path
+				opacity='0.25'
+				d='M37.3349 13.8088L12.7859 51.6552H31.1977L23.0146 83.3644L53.7009 44.4951H33.2434L37.3349 13.8088Z'
+				fill='#1A1A1A'
+			/>
+			<path
+				opacity='0.06'
+				d='M43.4722 0.511475L35.2892 40.4036H61.884L43.4722 0.511475Z'
+				fill='white'
+			/>
+		</svg>
+	);
+}
 
 export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
@@ -28,26 +70,28 @@ export default function Navbar() {
 			}`}
 		>
 			<nav className='max-w-7xl mx-auto px-6 flex items-center justify-between'>
-				{/* Logo */}
+				{/* Logo — favicon bolt + wordmark PNG */}
 				<a
 					href='#home'
-					className='flex items-center gap-2 group'
+					className='flex items-end gap-2 group'
 					aria-label='Raydesite Home'
 				>
-					<div className='relative'>
-						<div className='w-8 h-8 bg-[#1A1A1A] rounded-sm flex items-center justify-center group-hover:bg-[#F5A623] transition-colors duration-200'>
-							<span className='text-[#F4F3F0] font-mono font-bold text-sm group-hover:text-[#1A1A1A] transition-colors'>
-								R
-							</span>
+					{/* Favicon bolt in dark box */}
+					<div className='relative flex-shrink-0'>
+						<div className='w-10 h-10 bg-[#1A1A1A] rounded-md flex items-center justify-center group-hover:bg-[#F4F3F0] transition-colors duration-200 overflow-hidden'>
+							<RaydesiteBolt size={22} />
 						</div>
-						<div className='absolute -bottom-1 -right-1 w-3 h-3 bg-[#F5A623] rounded-full group-hover:bg-[#1A1A1A] transition-colors duration-200' />
 					</div>
-					<span
-						className='font-display font-800 text-xl tracking-tight text-[#1A1A1A]'
-						style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
-					>
-						RAYDESITE
-					</span>
+
+					{/* Logo PNG wordmark — un poco más grande */}
+					<Image
+						src='/logo-raydesite.png'
+						alt='Raydesite'
+						width={200}
+						height={56}
+						className='h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-80 mix-blend-multiply'
+						priority
+					/>
 				</a>
 
 				{/* Desktop Nav */}
@@ -78,7 +122,7 @@ export default function Navbar() {
 					</a>
 					<a
 						href='#quote'
-						className='relative font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F5A623] transition-all duration-200 flex items-center gap-2'
+						className='font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F5A623] transition-all duration-200 flex items-center gap-2'
 						aria-label='Get a Quote'
 					>
 						<svg
@@ -96,7 +140,7 @@ export default function Navbar() {
 					</a>
 				</div>
 
-				{/* Mobile menu */}
+				{/* Mobile menu button */}
 				<button
 					className='md:hidden p-2 rounded-md border-2 border-[#1A1A1A]'
 					onClick={() => setMenuOpen(!menuOpen)}
@@ -129,6 +173,20 @@ export default function Navbar() {
 					id='mobile-menu'
 					className='md:hidden bg-[#F4F3F0] border-t-2 border-[#1A1A1A] px-6 py-6'
 				>
+					{/* Mobile logo */}
+					<div className='flex items-center gap-2 mb-6 pb-6 border-b border-[#E5E5E5]'>
+						<div className='w-9 h-9 bg-[#1A1A1A] rounded-md flex items-center justify-center overflow-hidden'>
+							<RaydesiteBolt size={20} />
+						</div>
+						<Image
+							src='/logo-raydesite.png'
+							alt='Raydesite'
+							width={150}
+							height={44}
+							className='h-10 w-auto object-contain mix-blend-multiply'
+						/>
+					</div>
+
 					<ul className='flex flex-col gap-4 mb-6'>
 						{navItems.map((item) => (
 							<li key={item.label}>
