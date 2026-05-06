@@ -14,8 +14,8 @@ const products: Product[] = [
 		description:
 			'Online stores built to convert visitors into customers, with clean checkout flows and scalable foundations.',
 		emoji: '🛒',
-		tag: 'Conversion',
-		color: '#D4E8C2',
+		tag: 'Commerce',
+		color: '#CB98F7',
 	},
 	{
 		id: 'landing-pages',
@@ -24,7 +24,7 @@ const products: Product[] = [
 			'Fast, focused pages for launches, campaigns, services, and products that need a clear first impression.',
 		emoji: '🚀',
 		tag: 'Launch',
-		color: '#C2D8E8',
+		color: '#96EEDE',
 	},
 	{
 		id: 'mobile-pps',
@@ -33,7 +33,7 @@ const products: Product[] = [
 			'Mobile-first experiences designed around real user flows, not just screens that look good in a mockup.',
 		emoji: '📱',
 		tag: 'Mobile',
-		color: '#E8DCC2',
+		color: '#FF8991',
 	},
 	{
 		id: 'shopify',
@@ -41,8 +41,8 @@ const products: Product[] = [
 		description:
 			'Custom Shopify storefronts, theme improvements, integrations, and performance-focused commerce work.',
 		emoji: '⚙️',
-		tag: 'Commerce',
-		color: '#E8C2D4',
+		tag: 'Store',
+		color: '#D1E668',
 	},
 ];
 
@@ -55,7 +55,7 @@ export default function Products() {
 		>
 			<div className='max-w-7xl mx-auto'>
 				{/* Section header */}
-				<div className='flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6'>
+				<div className='flex flex-col md:flex-row md:items-end justify-between mb-16 gap-5BB'>
 					<div>
 						<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center gap-2 mb-3'>
 							<span className='w-6 h-0.5 bg-[#F5A623]' />
@@ -80,7 +80,7 @@ export default function Products() {
 						href='#quote'
 						className='self-start md:self-auto inline-flex items-center gap-2 font-mono text-sm font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-6 py-3 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
-						Discuss a project →
+						Free consultation →
 					</a>
 				</div>
 
@@ -101,7 +101,7 @@ export default function Products() {
 							{/* Tag badge */}
 							<div className='flex justify-between items-start mb-6'>
 								<span
-									className='font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border-2 border-[#1A1A1A] group-hover:border-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-[#F5A623] transition-all duration-200'
+									className='font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border-2 border-[#1A1A1A] group-hover:border-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-[#1A1A1A] transition-all duration-200'
 									style={{ backgroundColor: product.color }}
 								>
 									{product.tag}
