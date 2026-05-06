@@ -25,7 +25,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Raydesite — Code that looks good. Ships even better',
+		default: 'Raydesite — Software built to last. Businesses built to scale.',
 		template: '%s | Raydesite',
 	},
 	description:
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 		locale: 'en_US',
 		url: 'https://raydesite.com',
 		siteName: 'Raydesite',
-		title: 'Raydesite — Code that looks good. Ships even better',
+		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
 			'Software studio building landing pages, e-commerce, web apps, mobile apps, and Shopify storefronts. Clean code, sharp design.',
 		images: [
@@ -57,13 +57,13 @@ export const metadata: Metadata = {
 				url: '/og-image.png',
 				width: 1200,
 				height: 630,
-				alt: 'Raydesite — Code that looks good. Ships even better',
+				alt: 'Raydesite — Software built to last. Businesses built to scale.',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Raydesite — Code that looks good. Ships even better',
+		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
 			'Software studio building landing pages, e-commerce, web apps, and mobile apps. Clean code, sharp design.',
 		images: ['/og-image.png'],
