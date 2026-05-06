@@ -116,7 +116,7 @@ export default function Footer() {
 							{['𝕏', 'Ins', 'gh'].map((icon) => (
 								<a
 									key={icon}
-									href={`https://${icon === '𝕏' ? 'x.com' : icon === 'Instagram' ? 'instagram.com' : 'github.com'}/raydesite`}
+									href={`https://${icon === '𝕏' ? 'x.com' : icon === 'Ins' ? 'instagram.com' : 'github.com'}/raydesite`}
 									className='w-8 h-8 border border-[#3A3A3A] rounded-full flex items-center justify-center font-mono text-xs text-[#8A8680] hover:border-[#F5A623] hover:text-[#F5A623] transition-all duration-150'
 									aria-label={icon}
 								>
