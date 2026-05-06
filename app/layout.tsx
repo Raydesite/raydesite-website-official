@@ -82,7 +82,7 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: '/favicon.ico',
+		icon: '../public/icon.svg',
 		apple: '/apple-touch-icon.png',
 	},
 	manifest: '/site.webmanifest',
