@@ -1,3 +1,9 @@
+'use client';
+
+import Image from 'next/image';
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
+
 type Product = {
 	id: string;
 	name: string;
@@ -7,7 +13,7 @@ type Product = {
 	color: string;
 };
 
-const products: Product[] = [
+const productMeta: Product[] = [
 	{
 		id: 'e-commerce',
 		name: 'E-commerce',
@@ -46,9 +52,17 @@ const products: Product[] = [
 	},
 ];
 
-import Image from "next/image";
-
 export default function Products() {
+	const { lang } = useLang();
+	const tr = t[lang].products;
+
+	const products = tr.items.map((item, i) => ({
+		...item,
+		id: productMeta[i].id,
+		emoji: productMeta[i].emoji,
+		color: productMeta[i].color,
+	}));
+
 	return (
 		<section
 			id='products'
@@ -61,7 +75,7 @@ export default function Products() {
 					<div>
 						<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center gap-2 mb-3'>
 							<span className='w-6 h-0.5 bg-[#F5A623]' />
-							Our Products
+							{tr.eyebrow}
 						</span>
 						<h2
 							id='products-heading'
@@ -73,16 +87,16 @@ export default function Products() {
 								letterSpacing: '-0.02em',
 							}}
 						>
-							We don&apos;t do everything.
+							{tr.heading1}
 							<br />
-							<span className='text-[#F5A623]'>We do this well.</span>
+							<span className='text-[#F5A623]'>{tr.heading2}</span>
 						</h2>
 					</div>
 					<a
 						href='#quote'
 						className='self-start md:self-auto inline-flex items-center gap-2 font-mono text-sm font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-6 py-3 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
-						Free consultation →
+						{tr.cta}
 					</a>
 				</div>
 
@@ -109,7 +123,6 @@ export default function Products() {
 									{product.tag}
 								</span>
 								{/* <span className='text-2xl'>{product.emoji}</span> */}
-
 							</div>
 
 							{/* Illustration placeholder */}
@@ -124,9 +137,8 @@ export default function Products() {
 									src={product.emoji}
 									width={80}
 									height={80}
-									alt="store"
+									alt='store'
 								/>
-
 							</div>
 
 							<h3
@@ -148,7 +160,7 @@ export default function Products() {
 
 							<div className='flex items-center justify-between'>
 								<span className='font-mono text-xs font-bold uppercase tracking-widest text-[#8A8680] group-hover:text-[#1A1A1A]'>
-									Learn more →
+									{tr.learnMore}
 								</span>
 								<div className='w-8 h-8 bg-[#1A1A1A] group-hover:bg-[#F5A623] rounded-full flex items-center justify-center transition-colors duration-200'>
 									<svg
@@ -170,12 +182,7 @@ export default function Products() {
 
 				{/* Stats strip */}
 				<div className='mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1A1A1A] border-2 border-[#1A1A1A] rounded-2xl overflow-hidden'>
-					{[
-						{ value: '50+', label: 'Projects shipped' },
-						{ value: '4+', label: 'Core services' },
-						{ value: '24h', label: 'Response time' },
-						{ value: '100%', label: 'Built with care' },
-					].map((stat) => (
+					{tr.stats.map((stat) => (
 						<div
 							key={stat.label}
 							className='bg-[#F4F3F0] p-8 text-center hover:bg-[#F5A623] transition-colors duration-200 group'

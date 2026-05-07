@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Syne, DM_Sans, Space_Mono } from 'next/font/google';
+import { LanguageProvider } from '@/context/LanguageContext';
 import './globals.css';
 
 const syne = Syne({
@@ -42,12 +43,11 @@ export const metadata: Metadata = {
 		'freelance developer',
 		'Raydesite',
 	],
-	authors: [{ name: 'Raydesite', url: 'https://raydesite.com' }],
+	authors: [{ name: 'Raydesite', url: 'https://raydesite.netlify.app' }],
 	creator: 'Raydesite',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		// url: 'https://raydesite.com',
 		url: 'https://raydesite.netlify.app',
 		siteName: 'Raydesite',
 		title: 'Raydesite — Software built to last. Businesses built to scale.',
@@ -74,14 +74,12 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: '../public/icon.svg',
+		icon: '/icon.svg',
 		apple: '/apple-touch-icon.png',
 	},
 	manifest: '/site.webmanifest',
-	// metadataBase: new URL('https://raydesite.com'),
 	metadataBase: new URL('https://raydesite.netlify.app'),
 	alternates: {
-		// canonical: 'https://raydesite.com',
 		canonical: 'https://raydesite.netlify.app',
 	},
 };
@@ -106,8 +104,8 @@ export default function RootLayout({
 							name: 'Raydesite',
 							description:
 								'Custom software development services for businesses and digital products',
-							url: 'https://raydesite.com',
-							logo: 'https://raydesite.com/logo.png',
+							url: 'https://raydesite.netlify.app',
+							logo: 'https://raydesite.netlify.app/logo.png',
 							sameAs: [
 								'https://www.instagram.com/raydesite',
 								'https://www.tiktok.com/@raydesite.dev',
@@ -128,8 +126,6 @@ export default function RootLayout({
 										itemOffered: {
 											'@type': 'Service',
 											name: 'Landing Pages Development',
-											description:
-												'Fast, focused pages for launches, campaigns, and products.',
 										},
 									},
 									{
@@ -137,8 +133,6 @@ export default function RootLayout({
 										itemOffered: {
 											'@type': 'Service',
 											name: 'E-commerce Development',
-											description:
-												'Online stores built to convert visitors into customers.',
 										},
 									},
 									{
@@ -146,8 +140,6 @@ export default function RootLayout({
 										itemOffered: {
 											'@type': 'Service',
 											name: 'Web and Mobile Apps',
-											description:
-												'Production-ready web and mobile applications.',
 										},
 									},
 									{
@@ -155,8 +147,6 @@ export default function RootLayout({
 										itemOffered: {
 											'@type': 'Service',
 											name: 'Shopify Development',
-											description:
-												'Custom Shopify storefronts, theme improvements, and integrations.',
 										},
 									},
 								],
@@ -165,7 +155,9 @@ export default function RootLayout({
 					}}
 				/>
 			</head>
-			<body>{children}</body>
+			<body>
+				<LanguageProvider>{children}</LanguageProvider>
+			</body>
 		</html>
 	);
 }

@@ -1,3 +1,8 @@
+'use client';
+
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
+
 const releases = [
 	{
 		id: 1,
@@ -28,6 +33,9 @@ const releases = [
 ];
 
 export default function LatestRelease() {
+	const { lang } = useLang();
+	const tr = t[lang].latest;
+
 	return (
 		<section
 			id='latest'
@@ -38,7 +46,7 @@ export default function LatestRelease() {
 				<div className='text-center mb-16'>
 					<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center justify-center gap-2 mb-3'>
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
-						Recent work
+						{tr.eyebrow}
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
 					</span>
 					<h2
@@ -50,7 +58,7 @@ export default function LatestRelease() {
 							letterSpacing: '-0.02em',
 						}}
 					>
-						Latest Work
+						{tr.heading}
 					</h2>
 				</div>
 

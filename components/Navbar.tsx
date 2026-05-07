@@ -2,15 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
 
-const navItems = [
-	{ label: 'Home', href: '#home' },
-	{ label: 'Services', href: '#products' },
-	{ label: 'Work', href: '#latest' },
-	{ label: 'FAQ', href: '#faq' },
-];
-
-function RaydesiteBolt({ size = 28 }: { size?: number; }) {
+function RaydesiteBolt({ size = 28 }: { size?: number }) {
 	return (
 		<svg
 			width={size}
@@ -54,6 +49,15 @@ function RaydesiteBolt({ size = 28 }: { size?: number; }) {
 export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
+	const { lang, toggleLang } = useLang();
+	const tr = t[lang].nav;
+
+	const navItems = [
+		{ label: tr.home, href: '#home' },
+		{ label: tr.services, href: '#products' },
+		{ label: tr.work, href: '#latest' },
+		{ label: tr.faq, href: '#faq' },
+	];
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 20);
@@ -63,26 +67,24 @@ export default function Navbar() {
 
 	return (
 		<header
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-				? 'bg-[#F4F3F0]/90 backdrop-blur-md border-b-2 border-[#1A1A1A] py-3'
-				: 'bg-transparent py-5'
-				}`}
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+				scrolled
+					? 'bg-[#F4F3F0]/90 backdrop-blur-md border-b-2 border-[#1A1A1A] py-3'
+					: 'bg-transparent py-5'
+			}`}
 		>
 			<nav className='max-w-7xl mx-auto px-6 flex items-end justify-between'>
-				{/* Logo — favicon bolt + wordmark PNG */}
+				{/* Logo */}
 				<a
 					href='#home'
 					className='flex items-end gap-2 group'
 					aria-label='Raydesite Home'
 				>
-					{/* Favicon bolt in dark box */}
 					<div className='relative flex-shrink-0'>
 						<div className='w-10 h-10 bg-[#1A1A1A] rounded-md flex items-center justify-center group-hover:bg-[#F4F3F0] transition-colors duration-200 overflow-hidden'>
 							<RaydesiteBolt size={22} />
 						</div>
 					</div>
-
-					{/* Logo PNG wordmark — un poco más grande */}
 					<Image
 						src='/logo-raydesite.png'
 						alt='Raydesite'
@@ -113,16 +115,25 @@ export default function Navbar() {
 
 				{/* Actions */}
 				<div className='hidden md:flex items-center gap-3'>
+					{/* Language toggle */}
+					<button
+						onClick={toggleLang}
+						className='font-mono text-xs font-bold uppercase tracking-widest text-[#1A1A1A] border-2 border-[#1A1A1A] px-3 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
+						aria-label='Toggle language'
+					>
+						{lang === 'en' ? 'ES' : 'EN'}
+					</button>
+
 					<a
 						href='#products'
 						className='font-mono text-xs font-bold uppercase tracking-widest text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
-						Services
+						{tr.servicesBtn}
 					</a>
 					<a
 						href='#quote'
 						className='font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F5A623] transition-all duration-200 flex items-center gap-2'
-						aria-label='Get a Quote'
+						aria-label={tr.quoteBtn}
 					>
 						<svg
 							width='14'
@@ -135,7 +146,7 @@ export default function Navbar() {
 							<path d='M5 12h14' />
 							<path d='M13 5l7 7-7 7' />
 						</svg>
-						Get a Quote
+						{tr.quoteBtn}
 					</a>
 				</div>
 
@@ -186,17 +197,24 @@ export default function Navbar() {
 						))}
 					</ul>
 					<div className='flex gap-3'>
+						{/* Language toggle mobile */}
+						<button
+							onClick={toggleLang}
+							className='font-mono text-xs font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
+						>
+							{lang === 'en' ? 'ES' : 'EN'}
+						</button>
 						<a
 							href='#products'
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
 						>
-							Services
+							{tr.servicesBtn}
 						</a>
 						<a
 							href='#quote'
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
 						>
-							Get Quote
+							{tr.getQuoteMobile}
 						</a>
 					</div>
 				</div>
