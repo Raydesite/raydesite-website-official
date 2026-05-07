@@ -183,7 +183,7 @@ export default async function Image() {
 								letterSpacing: '-0.03em',
 							}}
 						>
-							Software built<span style={{ color: '#F5A623' }}> to last.</span>
+							Software built <span style={{ color: '#F5A623' }}> to last.</span>
 						</span>
 						<span
 							style={{
@@ -195,7 +195,7 @@ export default async function Image() {
 								marginTop: '8px',
 							}}
 						>
-							Businesses <span style={{ color: '#F5A623' }}>built</span> to
+							Businesses <span style={{ color: '#F5A623' }}> built</span> to
 							scale.
 						</span>
 					</div>
