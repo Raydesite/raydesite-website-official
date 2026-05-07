@@ -169,7 +169,7 @@ export default async function Image() {
 								color: '#8A8680',
 							}}
 						>
-							Software Studio · Atlanta, GA
+							Software Agency
 						</span>
 					</div>
 
@@ -183,7 +183,7 @@ export default async function Image() {
 								letterSpacing: '-0.03em',
 							}}
 						>
-							Code that <span style={{ color: '#F5A623' }}>looks good.</span>
+							Software built <span style={{ color: '#F5A623' }}>to last.</span>
 						</span>
 						<span
 							style={{
@@ -195,7 +195,7 @@ export default async function Image() {
 								marginTop: '8px',
 							}}
 						>
-							Ships even better.
+							Businesses built to scale.
 						</span>
 					</div>
 				</div>
