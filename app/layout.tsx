@@ -47,7 +47,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://raydesite.com',
+		// url: 'https://raydesite.com',
+		url: 'https://raydesite.netlify.app',
 		siteName: 'Raydesite',
 		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
@@ -77,9 +78,11 @@ export const metadata: Metadata = {
 		apple: '/apple-touch-icon.png',
 	},
 	manifest: '/site.webmanifest',
-	metadataBase: new URL('https://raydesite.com'),
+	// metadataBase: new URL('https://raydesite.com'),
+	metadataBase: new URL('https://raydesite.netlify.app'),
 	alternates: {
-		canonical: 'https://raydesite.com',
+		// canonical: 'https://raydesite.com',
+		canonical: 'https://raydesite.netlify.app',
 	},
 };
 
