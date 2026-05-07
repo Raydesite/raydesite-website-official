@@ -1,7 +1,5 @@
 import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
-
 export const alt =
 	'Raydesite — Software built to last. Businesses built to scale.';
 export const size = { width: 1200, height: 630 };
