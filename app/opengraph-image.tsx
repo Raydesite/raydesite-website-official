@@ -196,8 +196,8 @@ export default async function Image() {
 								marginTop: '8px',
 							}}
 						>
-							Businesses&nbsp;<span style={{ color: '#F5A623' }}>built</span> to
-							scale.
+							Businesses<span style={{ color: '#F5A623' }}> built&nbsp;</span>{' '}
+							to scale.
 						</span>
 					</div>
 				</div>
