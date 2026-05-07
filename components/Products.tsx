@@ -13,7 +13,7 @@ const products: Product[] = [
 		name: 'E-commerce',
 		description:
 			'Online stores built to convert visitors into customers, with clean checkout flows and scalable foundations.',
-		emoji: '🛒',
+		emoji: 'assets/commerce-badge.png',
 		tag: 'Commerce',
 		color: '#CB98F7',
 	},
@@ -22,7 +22,7 @@ const products: Product[] = [
 		name: 'Landing Pages',
 		description:
 			'Fast, focused pages for launches, campaigns, services, and products that need a clear first impression.',
-		emoji: '🚀',
+		emoji: 'assets/landing-badge.png',
 		tag: 'Launch',
 		color: '#96EEDE',
 	},
@@ -31,7 +31,7 @@ const products: Product[] = [
 		name: 'Mobile apps',
 		description:
 			'Mobile-first experiences designed around real user flows, not just screens that look good in a mockup.',
-		emoji: '📱',
+		emoji: 'assets/mobile-badge.png',
 		tag: 'Mobile',
 		color: '#FF8991',
 	},
@@ -40,11 +40,13 @@ const products: Product[] = [
 		name: 'Shopify',
 		description:
 			'Custom Shopify storefronts, theme improvements, integrations, and performance-focused commerce work.',
-		emoji: '⚙️',
+		emoji: 'assets/store-badge.png',
 		tag: 'Store',
 		color: '#D1E668',
 	},
 ];
+
+import Image from "next/image";
 
 export default function Products() {
 	return (
@@ -106,7 +108,8 @@ export default function Products() {
 								>
 									{product.tag}
 								</span>
-								<span className='text-2xl'>{product.emoji}</span>
+								{/* <span className='text-2xl'>{product.emoji}</span> */}
+
 							</div>
 
 							{/* Illustration placeholder */}
@@ -115,7 +118,15 @@ export default function Products() {
 								style={{ backgroundColor: product.color }}
 								aria-hidden='true'
 							>
-								<span className='text-5xl'>{product.emoji}</span>
+								{/* <span className='text-5xl'>{product.emoji}</span> */}
+
+								<Image
+									src={product.emoji}
+									width={80}
+									height={80}
+									alt="store"
+								/>
+
 							</div>
 
 							<h3
