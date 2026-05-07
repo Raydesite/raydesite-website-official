@@ -224,7 +224,7 @@ export default async function Image() {
 								style={{
 									backgroundColor: tag.bg,
 									color: tag.color,
-									border: `1.5px solid ${tag.color}`,
+									border: `1.5px solid ${tag.color ?? '#1A1A1A'}`,
 									borderRadius: '999px',
 									padding: '6px 14px',
 									fontSize: '12px',
