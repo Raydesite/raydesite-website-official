@@ -52,21 +52,12 @@ export const metadata: Metadata = {
 		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
 			'Software studio building landing pages, e-commerce, web apps, mobile apps, and Shopify storefronts. Clean code, sharp design.',
-		images: [
-			{
-				url: '/og-image.png',
-				width: 1200,
-				height: 630,
-				alt: 'Raydesite — Software built to last. Businesses built to scale.',
-			},
-		],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
 			'Software studio building landing pages, e-commerce, web apps, and mobile apps. Clean code, sharp design.',
-		images: ['/og-image.png'],
 		site: '@raydesite',
 		creator: '@raydesite',
 	},
