@@ -302,7 +302,7 @@ export const t = {
 			eyebrow: 'Quiénes somos',
 			heading1: 'Developers que',
 			heading2: 'diseñan.',
-			heading3: 'Diseñadoras que codean.',
+			heading3: 'Designers que codean.',
 			body: 'Raydesite es un equipo dev pequeño que diseña tan bien como codea. Sin intermediarios, sin outsourcing — solo personas que entregan.',
 			ctaBtn: 'Iniciar tu proyecto →',
 			socialProof: 'Actualmente abiertos a nuevos proyectos',
