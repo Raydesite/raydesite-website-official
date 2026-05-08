@@ -22,8 +22,6 @@ export const t = {
 			ctaSecondary: 'See our work',
 			floatingLabel: 'deploy: production',
 			floatingText: 'ready to ship 🚀',
-			badgeTop: 'OPEN',
-			badgeBottom: 'FOR WORK',
 			tags: [
 				{ label: 'Landing Page' },
 				{ label: 'Online Store' },
@@ -238,8 +236,6 @@ export const t = {
 			ctaSecondary: 'Ver nuestro trabajo',
 			floatingLabel: 'deploy: producción',
 			floatingText: 'listo para lanzar 🚀',
-			badgeTop: 'ABIERTOS',
-			badgeBottom: 'A PROYECTOS',
 			tags: [
 				{ label: 'Landing Page' },
 				{ label: 'Tienda Online' },

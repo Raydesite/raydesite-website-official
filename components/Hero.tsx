@@ -231,11 +231,11 @@ export default function Hero() {
 								</svg>
 
 								{/* Badge */}
-								<div className='absolute -top-4 -right-4 bg-[#F5A623] border-2 border-[#1A1A1A] rounded-full w-16 h-16 flex items-center justify-center shadow-[3px_3px_0_#1A1A1A]'>
+								<div className='absolute -top-8 -right-4 bg-[#F5A623] border-2 border-[#1A1A1A] rounded-full w-20 h-20 flex items-center justify-center shadow-[3px_3px_0_#1A1A1A]'>
 									<span className='font-mono font-bold text-xs text-center leading-tight text-[#1A1A1A]'>
-										{tr.badgeTop}
+										OPEN
 										<br />
-										{tr.badgeBottom}
+										FOR WORK
 									</span>
 								</div>
 							</div>
