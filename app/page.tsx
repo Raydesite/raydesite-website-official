@@ -10,7 +10,7 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-	title: 'Raydesite: Software solutions for everyone',
+	title: 'Raydesite — Software built to last. Businesses built to scale.',
 };
 
 export default function Home() {
