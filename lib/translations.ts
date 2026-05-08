@@ -117,13 +117,13 @@ export const t = {
 		},
 		quote: {
 			eyebrow: 'Project inquiry',
-			heading: 'Get a',
+			heading: 'Get a ',
 			headingAccent: 'Quote',
 			subheading:
 				'Tell us what you want to build. We will help you shape the right software plan.',
 			fields: [
 				{ key: 'name', label: 'Your name', placeholder: 'Ada Lovelace' },
-				{ key: 'email', label: 'Email', placeholder: 'ada@dev.io' },
+				{ key: 'email', label: 'Email', placeholder: 'ada@gmail.com' },
 				{
 					key: 'project',
 					label: 'What do you need?',
@@ -333,13 +333,13 @@ export const t = {
 		},
 		quote: {
 			eyebrow: 'Consulta de proyecto',
-			heading: 'Obtener',
+			heading: 'Obtener ',
 			headingAccent: 'Cotización',
 			subheading:
 				'Cuéntanos qué quieres construir. Te ayudamos a definir el plan de software adecuado.',
 			fields: [
 				{ key: 'name', label: 'Tu nombre', placeholder: 'Ada Lovelace' },
-				{ key: 'email', label: 'Correo', placeholder: 'ada@dev.io' },
+				{ key: 'email', label: 'Correo', placeholder: 'ada@gmail.com' },
 				{
 					key: 'project',
 					label: '¿Qué necesitas?',

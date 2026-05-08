@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import type { FormEvent } from 'react';
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
 
 export default function GetAQuote() {
 	const [submitted, setSubmitted] = useState(false);
@@ -14,11 +16,49 @@ export default function GetAQuote() {
 	});
 	const [error, setError] = useState('');
 
+	const { lang } = useLang();
+	const tr = t[lang].quote;
+
+	const fields = [
+		{
+			key: 'name',
+			label: tr.fields[0].label,
+			placeholder: tr.fields[0].placeholder,
+			type: 'text',
+			required: true,
+			autoComplete: 'name',
+		},
+		{
+			key: 'email',
+			label: tr.fields[1].label,
+			placeholder: tr.fields[1].placeholder,
+			type: 'email',
+			required: true,
+			autoComplete: 'email',
+		},
+		{
+			key: 'project',
+			label: tr.fields[2].label,
+			placeholder: tr.fields[2].placeholder,
+			type: 'text',
+			required: false,
+			autoComplete: 'off',
+		},
+		{
+			key: 'quantity',
+			label: tr.fields[3].label,
+			placeholder: tr.fields[3].placeholder,
+			type: 'text',
+			required: false,
+			autoComplete: 'off',
+		},
+	];
+
 	const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
 		if (!form.name.trim() || !form.email.trim()) {
-			setError('Please add your name and email so we can contact you.');
+			setError(tr.errorRequired);
 			return;
 		}
 
@@ -37,14 +77,13 @@ export default function GetAQuote() {
 			const data = await response.json();
 
 			if (!response.ok) {
-				setError(data.error || 'Something went wrong. Please try again.');
+				setError(data.error || tr.errorGeneral);
 				return;
 			}
 
 			setSubmitted(true);
-		} catch (error) {
-			setError('Network error. Please check your connection and try again.');
-			return;
+		} catch (_err) {
+			setError(tr.errorNetwork);
 		} finally {
 			setLoading(false);
 		}
@@ -60,7 +99,7 @@ export default function GetAQuote() {
 				<div className='text-center mb-16'>
 					<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center justify-center gap-2 mb-3'>
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
-						Project inquiry
+						{tr.eyebrow}
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
 					</span>
 					<h2
@@ -72,14 +111,14 @@ export default function GetAQuote() {
 							letterSpacing: '-0.02em',
 						}}
 					>
-						Get a <span className='text-[#F5A623]'>Quote</span>
+						{tr.heading}
+						<span className='text-[#F5A623]'>{tr.headingAccent}</span>
 					</h2>
 					<p
 						className='text-[#8A8680] mt-4 text-lg'
 						style={{ fontFamily: 'DM Sans, sans-serif' }}
 					>
-						Tell us what you want to build. We will help you shape the right
-						software plan.
+						{tr.subheading}
 					</p>
 				</div>
 
@@ -95,14 +134,13 @@ export default function GetAQuote() {
 								}}
 								className='mb-3'
 							>
-								Request received!
+								{tr.successTitle}
 							</h3>
 							<p
 								className='text-[#8A8680]'
 								style={{ fontFamily: 'DM Sans, sans-serif' }}
 							>
-								We will contact you within 24 hours. In the meantime, keep
-								growing. 🚀
+								{tr.successBody}
 							</p>
 						</div>
 					) : (
@@ -111,40 +149,7 @@ export default function GetAQuote() {
 							onSubmit={handleSubmit}
 							noValidate
 						>
-							{[
-								{
-									key: 'name',
-									label: 'Your name',
-									placeholder: 'Ada Lovelace',
-									type: 'text',
-									required: true,
-									autoComplete: 'name',
-								},
-								{
-									key: 'email',
-									label: 'Email',
-									placeholder: 'ada@gmail.com',
-									type: 'email',
-									required: true,
-									autoComplete: 'email',
-								},
-								{
-									key: 'project',
-									label: 'What do you need?',
-									placeholder: 'Landing page, app, shopify store...',
-									type: 'text',
-									required: false,
-									autoComplete: 'off',
-								},
-								{
-									key: 'quantity',
-									label: 'Project size',
-									placeholder: 'Redesign, full build...',
-									type: 'text',
-									required: false,
-									autoComplete: 'off',
-								},
-							].map((field) => (
+							{fields.map((field) => (
 								<div
 									key={field.key}
 									className={field.key === 'project' ? 'md:col-span-2' : ''}
@@ -183,9 +188,17 @@ export default function GetAQuote() {
 							<div className='md:col-span-2'>
 								<button
 									type='submit'
-									className='w-full bg-[#1A1A1A] text-[#F4F3F0] font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 rounded-full border-2 border-[#1A1A1A] hover:bg-[#F5A623] hover:text-[#1A1A1A] transition-all duration-200 hover:shadow-[4px_4px_0_#1A1A1A]'
+									disabled={loading}
+									className='w-full bg-[#1A1A1A] text-[#F4F3F0] font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 rounded-full border-2 border-[#1A1A1A] hover:bg-[#F5A623] hover:text-[#1A1A1A] transition-all duration-200 hover:shadow-[4px_4px_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3'
 								>
-									Send Request →
+									{loading ? (
+										<>
+											<span className='w-4 h-4 border-2 border-[#F4F3F0] border-t-transparent rounded-full animate-spin' />
+											{tr.submitting}
+										</>
+									) : (
+										tr.submitBtn
+									)}
 								</button>
 							</div>
 						</form>

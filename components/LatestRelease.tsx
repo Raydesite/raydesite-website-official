@@ -3,7 +3,7 @@
 import { useLang } from '@/context/LanguageContext';
 import { t } from '@/lib/translations';
 
-const releases = [
+const releasesMeta = [
 	{
 		id: 1,
 		name: 'Bingo Fortuna',
@@ -35,6 +35,11 @@ const releases = [
 export default function LatestRelease() {
 	const { lang } = useLang();
 	const tr = t[lang].latest;
+
+	const releases = tr.releases.map((item, i) => ({
+		...releasesMeta[i],
+		...item,
+	}));
 
 	return (
 		<section
