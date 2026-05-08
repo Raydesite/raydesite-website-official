@@ -1,36 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-
-const faqs = [
-	{
-		q: 'What software solutions does your company offer?',
-		a: 'We offer customized solutions including: landing pages, online stores, web and mobile applications, e-commerce, and process automation. Each project is tailored to your business needs.',
-	},
-	{
-		q: 'What is the development timeline for a project?',
-		a: 'It depends on complexity. A simple MVP takes 4-6 weeks, medium-sized projects 2-3 months. During the initial consultation we establish a clear timeline with defined milestones.',
-	},
-	{
-		q: 'Do you offer post-launch support?',
-		a: 'Yes. We offer monthly maintenance plans that include updates, security patches, and continuous optimizations.',
-	},
-	{
-		q: 'What technologies do you use?',
-		a: 'We work with modern and scalable technologies: React, Next.js, Node.js, TypeScript, PostgreSQL, Firebase. We choose the stack that best fits your project.',
-	},
-	{
-		q: 'What is the process to start a project?',
-		a: '1) Free initial consultation 2) Requirements and budget analysis 3) Technical proposal 4) Contract signature 5) Development begins with bi-weekly sprints.',
-	},
-	{
-		q: 'Can I see my project code?',
-		a: 'Yes. We provide complete access to the repository and code documentation.',
-	},
-];
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
 
 export default function FAQ() {
 	const [open, setOpen] = useState<number | null>(null);
+	const { lang } = useLang();
+	const tr = t[lang].faq;
 
 	return (
 		<section
@@ -42,7 +19,7 @@ export default function FAQ() {
 				<div className='text-center mb-16'>
 					<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center justify-center gap-2 mb-3'>
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
-						Got questions?
+						{tr.eyebrow}
 						<span className='w-6 h-0.5 bg-[#F5A623]' />
 					</span>
 					<h2
@@ -54,12 +31,12 @@ export default function FAQ() {
 							letterSpacing: '-0.02em',
 						}}
 					>
-						FAQ
+						{tr.heading}
 					</h2>
 				</div>
 
 				<dl className='space-y-3'>
-					{faqs.map((faq, i) => (
+					{tr.items.map((faq, i) => (
 						<div
 							key={i}
 							className={`border-2 border-[#1A1A1A] rounded-2xl overflow-hidden transition-all duration-200 ${open === i ? 'shadow-[4px_4px_0_#F5A623]' : 'hover:shadow-[4px_4px_0_#1A1A1A]'}`}

@@ -1,31 +1,12 @@
-const footerLinks = {
-	Services: [
-		{ label: 'Landing Pages', href: '#products' },
-		{ label: 'E-commerce', href: '#products' },
-		{ label: 'Web Apps', href: '#products' },
-		{ label: 'Mobile Apps', href: '#products' },
-		{ label: 'Shopify', href: '#products' },
-	],
-	Company: [
-		{ label: 'About Us', href: '/about-us' },
-		{ label: 'Process', href: '#quote' },
-		{ label: 'Work', href: '#latest' },
-		{ label: 'Careers', href: 'mailto:raydesite@gmail.com' },
-	],
-	Support: [
-		{ label: 'FAQ', href: '#faq' },
-		{ label: 'Discovery Call', href: '#quote' },
-		{ label: 'Maintenance', href: '#quote' },
-		{ label: 'Get a Quote', href: '#quote' },
-	],
-	Legal: [
-		{ label: 'Privacy Policy', href: '/privacy-policy' },
-		{ label: 'Terms of Service', href: '/terms-of-service' },
-		{ label: 'Cookie Policy', href: '/cookie-policy' },
-	],
-};
+'use client';
+
+import { useLang } from '@/context/LanguageContext';
+import { t } from '@/lib/translations';
 
 export default function Footer() {
+	const { lang } = useLang();
+	const tr = t[lang].footer;
+
 	return (
 		<footer
 			className='bg-[#1A1A1A] text-[#F4F3F0] pt-20 pb-8 px-6'
@@ -37,10 +18,42 @@ export default function Footer() {
 					{/* Brand */}
 					<div className='lg:col-span-2'>
 						<div className='flex items-center gap-3 mb-6'>
-							<div className='w-10 h-10 bg-[#F5A623] rounded-sm flex items-center justify-center'>
-								<span className='text-[#1A1A1A] font-mono font-bold text-lg'>
-									R
-								</span>
+							<div className='w-10 h-10 bg-[#1A1A1A] rounded-md flex items-center justify-center overflow-hidden'>
+								<svg
+									width='22'
+									height='33'
+									viewBox='0 0 66 100'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										opacity='0.12'
+										d='M43.4722 0.511475L0.511414 53.701H27.1062L16.8774 96.6618L61.884 40.4036H35.2892L43.4722 0.511475Z'
+										fill='#F5A623'
+									/>
+									<path
+										opacity='0.3'
+										d='M47.5637 5.62585L4.60291 58.8154H31.1977L20.9689 101.776L65.9755 45.518H39.3807L47.5637 5.62585Z'
+										fill='#E09010'
+									/>
+									<path
+										d='M43.4722 0.511475L0.511414 53.701H27.1062L16.8774 96.6618L61.884 40.4036H35.2892L43.4722 0.511475Z'
+										fill='#F5A623'
+										stroke='#F5A623'
+										strokeWidth='1.02288'
+										strokeLinejoin='round'
+									/>
+									<path
+										opacity='0.25'
+										d='M37.3349 13.8088L12.7859 51.6552H31.1977L23.0146 83.3644L53.7009 44.4951H33.2434L37.3349 13.8088Z'
+										fill='#1A1A1A'
+									/>
+									<path
+										opacity='0.06'
+										d='M43.4722 0.511475L35.2892 40.4036H61.884L43.4722 0.511475Z'
+										fill='white'
+									/>
+								</svg>
 							</div>
 							<span
 								style={{
@@ -56,8 +69,7 @@ export default function Footer() {
 							className='text-[#8A8680] leading-relaxed mb-6 max-w-xs'
 							style={{ fontFamily: 'DM Sans, sans-serif' }}
 						>
-							Custom software for startups, creators, and businesses that need
-							clean execution, not empty promises.
+							{tr.tagline}
 						</p>
 						{/* Newsletter */}
 						{/* <div>
@@ -78,39 +90,41 @@ export default function Footer() {
 					</div>
 
 					{/* Links */}
-					{Object.entries(footerLinks).map(([category, links]) => (
-						<div key={category}>
-							<h3 className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#F5A623] mb-5'>
-								{category}
-							</h3>
-							<ul
-								className='space-y-3'
-								role='list'
-							>
-								{links.map((link) => (
-									<li key={link.label}>
-										<a
-											href={link.href}
-											className='text-[#8A8680] hover:text-[#F4F3F0] transition-colors duration-150 text-sm'
-											style={{ fontFamily: 'DM Sans, sans-serif' }}
-										>
-											{link.label}
-										</a>
-									</li>
-								))}
-							</ul>
-						</div>
-					))}
+					{(Object.keys(tr.links) as Array<keyof typeof tr.links>).map(
+						(category) => (
+							<div key={category}>
+								<h3 className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#F5A623] mb-5'>
+									{tr.categories[category]}
+								</h3>
+								<ul
+									className='space-y-3'
+									role='list'
+								>
+									{tr.links[category].map((link) => (
+										<li key={link.label}>
+											<a
+												href={link.href}
+												className='text-[#8A8680] hover:text-[#F4F3F0] transition-colors duration-150 text-sm'
+												style={{ fontFamily: 'DM Sans, sans-serif' }}
+											>
+												{link.label}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						),
+					)}
 				</div>
 
 				{/* Bottom */}
 				<div className='flex flex-col md:flex-row items-center justify-between gap-4'>
 					<p className='font-mono text-xs text-[#5A5A5A] uppercase tracking-widest'>
-						© 2026 Raydesite. All rights reserved.
+						{tr.copyright}
 					</p>
 					<div className='flex items-center gap-6'>
 						<span className='font-mono text-xs text-[#5A5A5A]'>
-							Built with ☕ and too many tabs open
+							{tr.builtWith}
 						</span>
 						<div className='flex gap-3'>
 							{['𝕏', 'Ins', 'gh'].map((icon) => (
