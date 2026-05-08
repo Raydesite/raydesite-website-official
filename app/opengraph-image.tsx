@@ -169,7 +169,7 @@ export default async function Image() {
 								color: '#8A8680',
 							}}
 						>
-							Software Agency
+							Software Studio
 						</span>
 					</div>
 

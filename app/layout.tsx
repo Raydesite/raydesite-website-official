@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 		'Raydesite is a software development studio that builds landing pages, e-commerce stores, web apps, mobile apps, and Shopify storefronts. Clean code, sharp design, production-ready.',
 	keywords: [
 		'custom software development',
-		'Next.js development agency',
+		'Next.js development studio',
 		'Shopify developer',
 		'landing page development',
 		'e-commerce development',
