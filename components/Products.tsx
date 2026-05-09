@@ -85,6 +85,7 @@ export default function Products() {
 								fontSize: 'clamp(2rem, 5vw, 3.5rem)',
 								lineHeight: 1.1,
 								letterSpacing: '-0.02em',
+								marginBottom: 8,
 							}}
 						>
 							{tr.heading1}
