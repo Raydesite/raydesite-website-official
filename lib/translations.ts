@@ -211,6 +211,240 @@ export const t = {
 				],
 			},
 		},
+
+		// ABOUT US PAGE
+		aboutUs: {
+			sectionLabel: 'Our story',
+			heading: 'How did',
+			headingAccent: 'Raydesite',
+			headingEnd: 'happen?',
+			subheading:
+				'Two engineers. One unplanned idea. A name born from life itself.',
+			ctaLabel: 'Open for work',
+			ctaHeading: "Let's build something",
+			ctaAccent: 'worth shipping.',
+			ctaButton: 'Start a project →',
+			stackLabel: '// stack.raydesite',
+			stats: [
+				{ label: 'Founded', value: 'Nov 2019' },
+				{ label: 'Team', value: '2 engineers' },
+				{ label: 'Stack', value: 'Next.js · Shopify · Tailwind' },
+				{ label: 'Status', value: '🟢 Open for projects' },
+			],
+			timeline: [
+				{
+					date: 'Nov 2019',
+					side: 'left',
+					tag: 'Origin',
+					tagColor: '#D4E8C2',
+					tagText: '#2D5A1B',
+					title: 'Take the wheel.',
+					body: "We're both Systems Engineers — and we've always seen ourselves as more than that. The passion for software, design, and technology (and yes, Harry Potter) was always there. Where did you think the lightning bolt came from?",
+					badge: '// it started here',
+				},
+				{
+					date: 'Jan 2020',
+					side: 'right',
+					tag: 'Turning point',
+					tagColor: '#C2D8E8',
+					tagText: '#1B3D5A',
+					title: 'Fall or level up.',
+					body: '2020 pushed and collapsed a lot of people. For us, it meant learning to grow and sit with an idea that had been living in our heads for a while. Was that the start of Raydesite? Technically yes. In spirit, it had always been there.',
+					badge: null,
+				},
+				{
+					date: 'May 2020',
+					side: 'left',
+					tag: 'The name',
+					tagColor: '#F5A623',
+					tagText: '#1A1A1A',
+					title: 'Best things happen unplanned.',
+					body: 'Every piece of the name, the logo, the identity — each traces back to a real moment in our lives. Things that marked us and built who we are. The most incredible part? None of it was planned.',
+					badge: '// raydesite.exe',
+				},
+				{
+					date: 'Jun 2020',
+					side: 'right',
+					tag: 'Lesson',
+					tagColor: '#E8C2D4',
+					tagText: '#5A1B3D',
+					title: 'Lived experience, learned lesson.',
+					body: "The moment that crystallized everything: realizing how much we already knew. One of us deep in enterprise software. The other living in design and web dev. We just hadn't connected the dots yet.",
+					badge: null,
+				},
+				{
+					date: '2020 → ∞',
+					side: 'left',
+					tag: 'Now',
+					tagColor: '#C2E8D4',
+					tagText: '#1B5A3D',
+					title: "We're just getting started.",
+					body: 'So here we are — building for people who feel the same passion we do for code, design, and everything in between. No account managers, no outsourcing. Just two engineers who ship.',
+					badge: 'git push origin main 🚀',
+				},
+			],
+		},
+
+		// PRIVACY POLICY PAGE
+		privacyPolicy: {
+			label: 'Legal',
+			heading: 'Privacy Policy',
+			updated: 'Last updated: May 2025',
+			sections: [
+				{
+					title: '1. Who we are',
+					body: 'Raydesite is a software development studio based in Atlanta, Georgia, USA. We build websites, web apps, mobile apps, and digital products for clients in the US and internationally. You can reach us at raydesite@gmail.com.',
+				},
+				{
+					title: '2. What information we collect',
+					body: 'We only collect information you voluntarily provide through our contact form:',
+					list: [
+						'Your name',
+						'Your email address',
+						'A description of your project or inquiry',
+					],
+					footer:
+						'We do not collect any other personal data. We do not use cookies for tracking, analytics, or advertising purposes.',
+				},
+				{
+					title: '3. How we use your information',
+					body: 'The information you provide is used solely to:',
+					list: [
+						'Respond to your inquiry or project request',
+						'Send you a project proposal if applicable',
+						'Communicate during the development process',
+					],
+					footer:
+						'We will never sell, rent, or share your personal information with third parties. We do not send marketing emails or newsletters.',
+				},
+				{
+					title: '4. Data retention',
+					body: 'We retain your contact information only for as long as necessary to complete your project or respond to your inquiry. If no project agreement is reached, your information is deleted within 90 days of your initial contact.',
+				},
+				{
+					title: '5. Your rights',
+					body: 'You have the right to:',
+					list: [
+						'Request access to the personal data we hold about you',
+						'Request correction or deletion of your data',
+						'Withdraw consent at any time by contacting us',
+					],
+					footer:
+						'To exercise any of these rights, email us at raydesite@gmail.com.',
+				},
+				{
+					title: '6. Changes to this policy',
+					body: 'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. We encourage you to review this page periodically.',
+				},
+			],
+		},
+
+		// TERMS OF SERVICE PAGE
+		termsOfService: {
+			label: 'Legal',
+			heading: 'Terms of Service',
+			updated: 'Last updated: May 2025',
+			sections: [
+				{
+					title: '1. Agreement to terms',
+					body: 'By engaging Raydesite for any software development service, you agree to these Terms of Service. These terms govern the relationship between Raydesite (Atlanta, Georgia, USA) and the client from the moment a project proposal is signed and accepted.',
+				},
+				{
+					title: '2. Project proposal & approval',
+					body: 'Before any development begins, Raydesite will provide the client with a written project proposal that includes:',
+					list: [
+						'Scope of work and deliverables',
+						'Project timeline and milestones',
+						'Pricing and payment schedule',
+						'Technical requirements and assumptions',
+					],
+					footer:
+						'The client must review, approve, and sign the proposal before work begins. By signing, the client confirms they have read, understood, and agreed to all terms and requirements outlined in the proposal.',
+				},
+				{
+					title: '3. No refund policy',
+					body: 'All sales are final. Raydesite does not offer refunds once a project proposal has been signed and accepted by the client. By approving the proposal, the client confirms satisfaction with the agreed scope, timeline, and terms. Any disputes regarding deliverables must be raised within the scope of the original proposal and resolved through direct communication with our team at raydesite@gmail.com.',
+					highlight: true,
+					badge: '⚠️ Important',
+				},
+				{
+					title: '4. Payment terms',
+					body: 'All prices are in US dollars (USD). Payment schedules are defined in the project proposal. Raydesite reserves the right to pause or stop work if payments are not received according to the agreed schedule.',
+					footer:
+						'Late payments may incur a fee of 5% per month on the outstanding balance, as outlined in the project proposal.',
+				},
+				{
+					title: '5. Scope changes',
+					body: 'Any changes to the agreed scope of work must be requested in writing and approved by both parties. Scope changes may affect the timeline and cost of the project. Raydesite will provide an updated proposal for any significant changes before proceeding.',
+				},
+				{
+					title: '6. Intellectual property',
+					body: 'Upon receipt of full payment, the client receives full ownership of all custom code and assets developed specifically for their project. Raydesite retains the right to showcase the project in our portfolio unless the client requests otherwise in writing.',
+				},
+				{
+					title: '7. Client responsibilities',
+					body: 'The client agrees to:',
+					list: [
+						'Provide all required content, assets, and access in a timely manner',
+						'Review and provide feedback within the agreed timeframes',
+						'Designate a single point of contact for project communication',
+						'Not use deliverables for any illegal or unethical purposes',
+					],
+				},
+				{
+					title: '8. Governing law',
+					body: 'These terms are governed by the laws of the State of Georgia, United States. Any disputes will be resolved through good-faith negotiation. If unresolved, disputes will be subject to the jurisdiction of the courts of Georgia, USA.',
+				},
+				{
+					title: '9. Contact',
+					body: 'For any questions about these terms, contact us at raydesite@gmail.com.',
+				},
+			],
+		},
+
+		// COOKIE POLICY PAGE
+		cookiePolicy: {
+			label: 'Legal',
+			heading: 'Cookie Policy',
+			updated: 'Last updated: May 2025',
+			sections: [
+				{
+					title: '1. What are cookies?',
+					body: 'Cookies are small text files stored on your device when you visit a website. They are widely used to make websites work properly and to provide basic functionality like remembering your preferences.',
+				},
+				{
+					title: '2. How we use cookies',
+					body: 'Raydesite uses only essential technical cookies necessary for the website to function correctly. We do not use cookies for advertising, marketing, behavioral tracking, or any third-party analytics at this time.',
+				},
+				{
+					title: '3. Types of cookies we use',
+					cookieTypes: [
+						{
+							type: 'Essential cookies',
+							color: '#D4E8C2',
+							textColor: '#2D5A1B',
+							desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Vercel) for basic site delivery. You cannot opt out of these.',
+						},
+					],
+				},
+				{
+					title: '4. Third-party cookies',
+					body: 'We currently do not use any third-party cookies, including from Google Analytics, Meta, or any advertising network. If this changes in the future, this policy will be updated accordingly and you will be notified via a cookie consent banner.',
+				},
+				{
+					title: '5. Managing cookies',
+					body: "You can control and delete cookies through your browser settings. Please note that disabling essential cookies may affect the functionality of the website. For more information on how to manage cookies, visit your browser's help documentation.",
+				},
+				{
+					title: '6. Changes to this policy',
+					body: 'We may update this Cookie Policy as our website evolves. Any changes will be posted on this page with an updated date. We recommend reviewing this page periodically.',
+				},
+				{
+					title: '7. Contact',
+					body: 'Questions about our cookie practices? Reach us at raydesite@gmail.com.',
+				},
+			],
+		},
 	},
 
 	es: {
@@ -425,6 +659,240 @@ export const t = {
 					{ label: 'Política de cookies', href: '/cookie-policy' },
 				],
 			},
+		},
+
+		// ABOUT US PAGE
+		aboutUs: {
+			sectionLabel: 'Nuestra historia',
+			heading: '¿Cómo sucedió',
+			headingAccent: 'Raydesite?',
+			headingEnd: '',
+			subheading:
+				'Dos ingenieras. Una idea sin planeación. Un nombre nacido de la vida misma.',
+			ctaLabel: 'Abiertos para trabajar',
+			ctaHeading: 'Construyamos algo',
+			ctaAccent: 'que valga la pena entregar.',
+			ctaButton: 'Iniciar un proyecto →',
+			stackLabel: '// stack.raydesite',
+			stats: [
+				{ label: 'Fundada', value: 'Nov 2019' },
+				{ label: 'Equipo', value: '2 ingenieras' },
+				{ label: 'Stack', value: 'Next.js · Shopify · Tailwind' },
+				{ label: 'Estado', value: '🟢 Abiertos para proyectos' },
+			],
+			timeline: [
+				{
+					date: 'Nov 2019',
+					side: 'left',
+					tag: 'Origen',
+					tagColor: '#D4E8C2',
+					tagText: '#2D5A1B',
+					title: 'Tomar las riendas.',
+					body: 'Somos ambas Ingenieras de Sistemas — y siempre nos hemos visto como algo más. La pasión por software, diseño y tecnología (y sí, Harry Potter) siempre estuvo ahí. ¿De dónde crees que vino el rayo?',
+					badge: '// it started here',
+				},
+				{
+					date: 'Ene 2020',
+					side: 'right',
+					tag: 'Punto de quiebre',
+					tagColor: '#C2D8E8',
+					tagText: '#1B3D5A',
+					title: 'Caer o elevarse.',
+					body: '2020 empujó y derrumbó a muchas personas. Para nosotras, significó aprender a crecer y sentarnos con una idea que había vivido en nuestras cabezas por un tiempo. ¿Fue ese el inicio de Raydesite? Técnicamente sí. En espíritu, siempre estuvo ahí.',
+					badge: null,
+				},
+				{
+					date: 'May 2020',
+					side: 'left',
+					tag: 'El nombre',
+					tagColor: '#F5A623',
+					tagText: '#1A1A1A',
+					title: 'Las mejores cosas suceden sin planeación.',
+					body: 'Cada pieza del nombre, el logo, la identidad — cada una se remonta a un momento real en nuestras vidas. Cosas que nos marcaron y construyeron quiénes somos. ¿Lo más increíble? Nada fue planeado.',
+					badge: '// raydesite.exe',
+				},
+				{
+					date: 'Jun 2020',
+					side: 'right',
+					tag: 'Lección',
+					tagColor: '#E8C2D4',
+					tagText: '#5A1B3D',
+					title: 'Experiencia vivida, lección aprendida.',
+					body: 'El momento que cristalizó todo: darnos cuenta cuánto ya sabíamos. Una de nosotras profunda en software empresarial. La otra viviendo en diseño y desarrollo web. Solo que no habíamos conectado los puntos aún.',
+					badge: null,
+				},
+				{
+					date: '2020 → ∞',
+					side: 'left',
+					tag: 'Ahora',
+					tagColor: '#C2E8D4',
+					tagText: '#1B5A3D',
+					title: 'Apenas estamos empezando.',
+					body: 'Así que aquí estamos — construyendo para personas que sienten la misma pasión que nosotras por código, diseño y todo lo demás. Sin account managers, sin outsourcing. Solo dos ingenieras que entregan.',
+					badge: 'git push origin main 🚀',
+				},
+			],
+		},
+
+		// PRIVACY POLICY PAGE
+		privacyPolicy: {
+			label: 'Legal',
+			heading: 'Política de Privacidad',
+			updated: 'Última actualización: Mayo 2025',
+			sections: [
+				{
+					title: '1. Quiénes somos',
+					body: 'Raydesite es un estudio de desarrollo de software basado en Atlanta, Georgia, USA. Creamos sitios web, aplicaciones web, aplicaciones móviles y productos digitales para clientes en USA e internacionalmente. Puedes contactarnos en raydesite@gmail.com.',
+				},
+				{
+					title: '2. Qué información recopilamos',
+					body: 'Solo recopilamos información que proporcionas voluntariamente a través de nuestro formulario de contacto:',
+					list: [
+						'Tu nombre',
+						'Tu dirección de correo electrónico',
+						'Una descripción de tu proyecto o consulta',
+					],
+					footer:
+						'No recopilamos ningún otro dato personal. No usamos cookies para rastreo, análisis o publicidad.',
+				},
+				{
+					title: '3. Cómo usamos tu información',
+					body: 'La información que proporcionas se usa únicamente para:',
+					list: [
+						'Responder a tu consulta o solicitud de proyecto',
+						'Enviarte una propuesta de proyecto si es aplicable',
+						'Comunicarnos durante el proceso de desarrollo',
+					],
+					footer:
+						'Nunca venderemos, alquilaremos ni compartiremos tu información personal con terceros. No enviamos correos de marketing ni boletines.',
+				},
+				{
+					title: '4. Retención de datos',
+					body: 'Retenemos tu información de contacto solo el tiempo necesario para completar tu proyecto o responder a tu consulta. Si no se llega a un acuerdo de proyecto, tu información se elimina dentro de 90 días de tu contacto inicial.',
+				},
+				{
+					title: '5. Tus derechos',
+					body: 'Tienes derecho a:',
+					list: [
+						'Solicitar acceso a los datos personales que tenemos sobre ti',
+						'Solicitar corrección o eliminación de tus datos',
+						'Retirar el consentimiento en cualquier momento contactándonos',
+					],
+					footer:
+						'Para ejercer cualquiera de estos derechos, envíanos un correo a raydesite@gmail.com.',
+				},
+				{
+					title: '6. Cambios a esta política',
+					body: 'Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio será publicado en esta página con una fecha actualizada. Te animamos a revisar esta página periódicamente.',
+				},
+			],
+		},
+
+		// TERMS OF SERVICE PAGE
+		termsOfService: {
+			label: 'Legal',
+			heading: 'Términos de Servicio',
+			updated: 'Última actualización: Mayo 2025',
+			sections: [
+				{
+					title: '1. Aceptación de términos',
+					body: 'Al contratar a Raydesite para cualquier servicio de desarrollo de software, aceptas estos Términos de Servicio. Estos términos rigen la relación entre Raydesite (Atlanta, Georgia, USA) y el cliente desde el momento en que una propuesta de proyecto es firmada y aceptada.',
+				},
+				{
+					title: '2. Propuesta de proyecto y aprobación',
+					body: 'Antes de que comience cualquier desarrollo, Raydesite proporcionará al cliente una propuesta de proyecto escrita que incluya:',
+					list: [
+						'Alcance del trabajo y entregables',
+						'Cronograma del proyecto e hitos',
+						'Precios y calendario de pagos',
+						'Requisitos técnicos y suposiciones',
+					],
+					footer:
+						'El cliente debe revisar, aprobar y firmar la propuesta antes de que comience el trabajo. Al firmar, el cliente confirma que ha leído, comprendido y aceptado todos los términos y requisitos establecidos en la propuesta.',
+				},
+				{
+					title: '3. Política sin reembolso',
+					body: 'Todas las ventas son finales. Raydesite no ofrece reembolsos una vez que una propuesta de proyecto ha sido firmada y aceptada por el cliente. Al aprobar la propuesta, el cliente confirma su satisfacción con el alcance, cronograma y términos acordados. Cualquier disputa respecto a los entregables debe ser planteada dentro del alcance de la propuesta original y resuelta a través de comunicación directa con nuestro equipo en raydesite@gmail.com.',
+					highlight: true,
+					badge: '⚠️ Importante',
+				},
+				{
+					title: '4. Términos de pago',
+					body: 'Todos los precios están en dólares estadounidenses (USD). Los calendarios de pago se definen en la propuesta del proyecto. Raydesite se reserva el derecho de pausar o detener el trabajo si los pagos no se reciben según el cronograma acordado.',
+					footer:
+						'Los pagos atrasados pueden incurrir en una tarifa del 5% mensual sobre el saldo pendiente, como se establece en la propuesta del proyecto.',
+				},
+				{
+					title: '5. Cambios en el alcance',
+					body: 'Cualquier cambio en el alcance de trabajo acordado debe ser solicitado por escrito y aprobado por ambas partes. Los cambios de alcance pueden afectar el cronograma y el costo del proyecto. Raydesite proporcionará una propuesta actualizada para cualquier cambio significativo antes de proceder.',
+				},
+				{
+					title: '6. Propiedad intelectual',
+					body: 'Tras recibir el pago completo, el cliente recibe la propiedad total de todo el código personalizado y activos desarrollados específicamente para su proyecto. Raydesite se reserva el derecho de mostrar el proyecto en nuestro portafolio a menos que el cliente solicite lo contrario por escrito.',
+				},
+				{
+					title: '7. Responsabilidades del cliente',
+					body: 'El cliente acepta:',
+					list: [
+						'Proporcionar todo el contenido, activos y acceso requerido de manera oportuna',
+						'Revisar y proporcionar retroalimentación dentro de los plazos acordados',
+						'Designar un único punto de contacto para la comunicación del proyecto',
+						'No usar los entregables para propósitos ilegales o no éticos',
+					],
+				},
+				{
+					title: '8. Ley aplicable',
+					body: 'Estos términos se rigen por las leyes del Estado de Georgia, Estados Unidos. Cualquier disputa será resuelta a través de negociación de buena fe. Si no se resuelve, las disputas estarán sujetas a la jurisdicción de los tribunales de Georgia, USA.',
+				},
+				{
+					title: '9. Contacto',
+					body: 'Para cualquier pregunta sobre estos términos, contáctanos en raydesite@gmail.com.',
+				},
+			],
+		},
+
+		// COOKIE POLICY PAGE
+		cookiePolicy: {
+			label: 'Legal',
+			heading: 'Política de Cookies',
+			updated: 'Última actualización: Mayo 2025',
+			sections: [
+				{
+					title: '1. ¿Qué son las cookies?',
+					body: 'Las cookies son pequeños archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Se utilizan ampliamente para hacer que los sitios web funcionen correctamente y para proporcionar funcionalidad básica como recordar tus preferencias.',
+				},
+				{
+					title: '2. Cómo usamos las cookies',
+					body: 'Raydesite utiliza solo cookies técnicas esenciales necesarias para que el sitio web funcione correctamente. No usamos cookies para publicidad, marketing, rastreo de comportamiento ni análisis de terceros en este momento.',
+				},
+				{
+					title: '3. Tipos de cookies que usamos',
+					cookieTypes: [
+						{
+							type: 'Cookies esenciales',
+							color: '#D4E8C2',
+							textColor: '#2D5A1B',
+							desc: 'Requeridas para que el sitio web funcione. Incluyen cookies de sesión establecidas por el navegador y cookies utilizadas por nuestro proveedor de hosting (Vercel) para la entrega básica del sitio. No puedes optar por no usarlas.',
+						},
+					],
+				},
+				{
+					title: '4. Cookies de terceros',
+					body: 'Actualmente no usamos cookies de terceros, incluyendo Google Analytics, Meta, ni ninguna red publicitaria. Si esto cambia en el futuro, esta política será actualizada en consecuencia y serás notificado a través de un banner de consentimiento de cookies.',
+				},
+				{
+					title: '5. Gestionar cookies',
+					body: 'Puedes controlar y eliminar cookies a través de la configuración de tu navegador. Ten en cuenta que desactivar cookies esenciales puede afectar la funcionalidad del sitio web. Para más información sobre cómo gestionar cookies, visita la documentación de ayuda de tu navegador.',
+				},
+				{
+					title: '6. Cambios a esta política',
+					body: 'Podemos actualizar esta Política de Cookies conforme nuestro sitio web evoluciona. Cualquier cambio será publicado en esta página con una fecha actualizada. Recomendamos revisar esta página periódicamente.',
+				},
+				{
+					title: '7. Contacto',
+					body: '¿Preguntas sobre nuestras prácticas de cookies? Contáctanos en raydesite@gmail.com.',
+				},
+			],
 		},
 	},
 } as const;

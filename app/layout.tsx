@@ -43,12 +43,12 @@ export const metadata: Metadata = {
 		'freelance developer',
 		'Raydesite',
 	],
-	authors: [{ name: 'Raydesite', url: 'https://raydesite.netlify.app' }],
+	authors: [{ name: 'Raydesite', url: 'https://raydesite.com' }],
 	creator: 'Raydesite',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://raydesite.netlify.app',
+		url: 'https://raydesite.com',
 		siteName: 'Raydesite',
 		title: 'Raydesite — Software built to last. Businesses built to scale.',
 		description:
@@ -78,9 +78,9 @@ export const metadata: Metadata = {
 		apple: '/apple-touch-icon.png',
 	},
 	manifest: '/site.webmanifest',
-	metadataBase: new URL('https://raydesite.netlify.app'),
+	metadataBase: new URL('https://raydesite.com'),
 	alternates: {
-		canonical: 'https://raydesite.netlify.app',
+		canonical: 'https://raydesite.com',
 	},
 };
 
@@ -104,8 +104,8 @@ export default function RootLayout({
 							name: 'Raydesite',
 							description:
 								'Custom software development services for businesses and digital products',
-							url: 'https://raydesite.netlify.app',
-							logo: 'https://raydesite.netlify.app/logo.png',
+							url: 'https://raydesite.com',
+							logo: 'https://raydesite.com/logo.png',
 							sameAs: [
 								'https://www.instagram.com/raydesite',
 								'https://www.tiktok.com/@raydesite.dev',
