@@ -288,12 +288,13 @@ export const t = {
 		// PRIVACY POLICY PAGE
 		privacyPolicy: {
 			label: 'Legal',
-			heading: 'Privacy Policy',
+			heading: 'Privacy',
+			headingAccent: 'Policy',
 			updated: 'Last updated: May 2025',
 			sections: [
 				{
 					title: '1. Who we are',
-					body: 'Raydesite is a software development studio based in Atlanta, Georgia, USA. We build websites, web apps, mobile apps, and digital products for clients in the US and internationally. You can reach us at raydesite@gmail.com.',
+					body: 'Raydesite is a software development studio based in Atlanta, Georgia, USA. We build websites, web apps, mobile apps, and digital products for clients in the US and internationally. You can reach us at ',
 				},
 				{
 					title: '2. What information we collect',
@@ -329,8 +330,7 @@ export const t = {
 						'Request correction or deletion of your data',
 						'Withdraw consent at any time by contacting us',
 					],
-					footer:
-						'To exercise any of these rights, email us at raydesite@gmail.com.',
+					footer: 'To exercise any of these rights, email us at ',
 				},
 				{
 					title: '6. Changes to this policy',
@@ -737,15 +737,16 @@ export const t = {
 		// PRIVACY POLICY PAGE
 		privacyPolicy: {
 			label: 'Legal',
-			heading: 'Política de Privacidad',
+			heading: 'Política de',
+			headingAccent: 'Privacidad',
 			updated: 'Última actualización: Mayo 2025',
 			sections: [
 				{
-					title: '1. Quiénes somos',
-					body: 'Raydesite es un estudio de desarrollo de software basado en Atlanta, Georgia, USA. Creamos sitios web, aplicaciones web, aplicaciones móviles y productos digitales para clientes en USA e internacionalmente. Puedes contactarnos en raydesite@gmail.com.',
+					title: '1. ¿Quiénes somos?',
+					body: 'Raydesite es un estudio de desarrollo de software basado en Atlanta, Georgia, USA. Creamos sitios web, aplicaciones web, aplicaciones móviles y productos digitales para clientes en USA e internacionalmente. Puedes contactarnos en ',
 				},
 				{
-					title: '2. Qué información recopilamos',
+					title: '2. ¿Qué información recopilamos?',
 					body: 'Solo recopilamos información que proporcionas voluntariamente a través de nuestro formulario de contacto:',
 					list: [
 						'Tu nombre',
@@ -756,7 +757,7 @@ export const t = {
 						'No recopilamos ningún otro dato personal. No usamos cookies para rastreo, análisis o publicidad.',
 				},
 				{
-					title: '3. Cómo usamos tu información',
+					title: '3. ¿Cómo usamos tu información?',
 					body: 'La información que proporcionas se usa únicamente para:',
 					list: [
 						'Responder a tu consulta o solicitud de proyecto',
@@ -779,7 +780,7 @@ export const t = {
 						'Retirar el consentimiento en cualquier momento contactándonos',
 					],
 					footer:
-						'Para ejercer cualquiera de estos derechos, envíanos un correo a raydesite@gmail.com.',
+						'Para ejercer cualquiera de estos derechos, envíanos un correo a ',
 				},
 				{
 					title: '6. Cambios a esta política',
