@@ -342,7 +342,8 @@ export const t = {
 		// TERMS OF SERVICE PAGE
 		termsOfService: {
 			label: 'Legal',
-			heading: 'Terms of Service',
+			heading: 'Terms of ',
+			headingAccent: 'Service',
 			updated: 'Last updated: May 2025',
 			sections: [
 				{
@@ -363,7 +364,7 @@ export const t = {
 				},
 				{
 					title: '3. No refund policy',
-					body: 'All sales are final. Raydesite does not offer refunds once a project proposal has been signed and accepted by the client. By approving the proposal, the client confirms satisfaction with the agreed scope, timeline, and terms. Any disputes regarding deliverables must be raised within the scope of the original proposal and resolved through direct communication with our team at raydesite@gmail.com.',
+					body: 'All sales are final. Raydesite does not offer refunds once a project proposal has been signed and accepted by the client. By approving the proposal, the client confirms satisfaction with the agreed scope, timeline, and terms. Any disputes regarding deliverables must be raised within the scope of the original proposal and resolved through direct communication with our team at ',
 					highlight: true,
 					badge: '⚠️ Important',
 				},
@@ -379,7 +380,7 @@ export const t = {
 				},
 				{
 					title: '6. Intellectual property',
-					body: 'Upon receipt of full payment, the client receives full ownership of all custom code and assets developed specifically for their project. Raydesite retains the right to showcase the project in our portfolio unless the client requests otherwise in writing.',
+					body: 'Upon receipt of full payment, the client receives full ownership of all custom code and assets developed specifically for their project. Raydesite retains the right to showcase the project in our portfolio.',
 				},
 				{
 					title: '7. Client responsibilities',
@@ -397,7 +398,7 @@ export const t = {
 				},
 				{
 					title: '9. Contact',
-					body: 'For any questions about these terms, contact us at raydesite@gmail.com.',
+					body: 'For any questions about these terms, contact us at ',
 				},
 			],
 		},
@@ -796,7 +797,8 @@ export const t = {
 		// TERMS OF SERVICE PAGE
 		termsOfService: {
 			label: 'Legal',
-			heading: 'Términos de Servicio',
+			heading: 'Términos de ',
+			headingAccent: 'Servicio',
 			updated: 'Última actualización: Mayo 2025',
 			sections: [
 				{
@@ -817,7 +819,7 @@ export const t = {
 				},
 				{
 					title: '3. Política sin reembolso',
-					body: 'Todas las ventas son finales. Raydesite no ofrece reembolsos una vez que una propuesta de proyecto ha sido firmada y aceptada por el cliente. Al aprobar la propuesta, el cliente confirma su satisfacción con el alcance, cronograma y términos acordados. Cualquier disputa respecto a los entregables debe ser planteada dentro del alcance de la propuesta original y resuelta a través de comunicación directa con nuestro equipo en raydesite@gmail.com.',
+					body: 'Todas las ventas son finales. Raydesite no ofrece reembolsos una vez que una propuesta de proyecto ha sido firmada y aceptada por el cliente. Al aprobar la propuesta, el cliente confirma su satisfacción con el alcance, cronograma y términos acordados. Cualquier disputa respecto a los entregables debe ser planteada dentro del alcance de la propuesta original y resuelta a través de comunicación directa con nuestro equipo en ',
 					highlight: true,
 					badge: '⚠️ Importante',
 				},
@@ -833,7 +835,7 @@ export const t = {
 				},
 				{
 					title: '6. Propiedad intelectual',
-					body: 'Tras recibir el pago completo, el cliente recibe la propiedad total de todo el código personalizado y activos desarrollados específicamente para su proyecto. Raydesite se reserva el derecho de mostrar el proyecto en nuestro portafolio a menos que el cliente solicite lo contrario por escrito.',
+					body: 'Tras recibir el pago completo, el cliente recibe la propiedad total de todo el código personalizado y activos desarrollados específicamente para su proyecto. Raydesite se reserva el derecho de mostrar el proyecto en nuestro portafolio.',
 				},
 				{
 					title: '7. Responsabilidades del cliente',
@@ -851,7 +853,7 @@ export const t = {
 				},
 				{
 					title: '9. Contacto',
-					body: 'Para cualquier pregunta sobre estos términos, contáctanos en raydesite@gmail.com.',
+					body: 'Para cualquier pregunta sobre estos términos, contáctanos en ',
 				},
 			],
 		},
