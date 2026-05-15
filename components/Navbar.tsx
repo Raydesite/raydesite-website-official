@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import Image from 'next/image';
 import { useLang } from '@/context/LanguageContext';
 import { t } from '@/lib/translations';
@@ -51,12 +53,16 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const { lang, toggleLang } = useLang();
 	const tr = t[lang].nav;
+	const pathname = usePathname();
+
+	const isHome = pathname === '/';
+	const href = (anchor: string) => (isHome ? anchor : `/${anchor}`);
 
 	const navItems = [
-		{ label: tr.home, href: '#home' },
-		{ label: tr.services, href: '#products' },
-		{ label: tr.work, href: '#latest' },
-		{ label: tr.faq, href: '#faq' },
+		{ label: tr.home, href: href('#home') },
+		{ label: tr.services, href: href('#products') },
+		{ label: tr.work, href: href('#latest') },
+		{ label: tr.faq, href: href('#faq') },
 	];
 
 	useEffect(() => {
@@ -75,8 +81,8 @@ export default function Navbar() {
 		>
 			<nav className='max-w-7xl mx-auto px-6 flex items-end justify-between'>
 				{/* Logo */}
-				<a
-					href='#home'
+				<Link
+					href='/'
 					className='flex items-end gap-2 group'
 					aria-label='Raydesite Home'
 				>
@@ -93,7 +99,7 @@ export default function Navbar() {
 						className='h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-80 mix-blend-multiply'
 						priority
 					/>
-				</a>
+				</Link>
 
 				{/* Desktop Nav */}
 				<ul
