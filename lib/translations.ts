@@ -1,3 +1,14 @@
+type TimelineItem = {
+	date: string;
+	side: string;
+	tag: string;
+	tagColor: string;
+	tagText: string;
+	title: string;
+	body: string;
+	badge: string | null;
+};
+
 export const t = {
 	en: {
 		nav: {
@@ -282,7 +293,7 @@ export const t = {
 					body: 'So here we are — building for people who feel the same passion we do for code, design, and everything in between. No account managers, no outsourcing. Just two engineers who ship.',
 					badge: 'git push origin main 🚀',
 				},
-			],
+			] as TimelineItem[],
 		},
 
 		// PRIVACY POLICY PAGE
@@ -736,7 +747,7 @@ export const t = {
 					body: 'Así que aquí estamos — construyendo para personas que sienten la misma pasión que nosotras por código, diseño y todo lo demás. Sin account managers, sin outsourcing. Solo dos ingenieras que entregan.',
 					badge: 'git push origin main 🚀',
 				},
-			],
+			] as TimelineItem[],
 		},
 
 		// PRIVACY POLICY PAGE
