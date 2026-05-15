@@ -405,7 +405,8 @@ export const t = {
 		// COOKIE POLICY PAGE
 		cookiePolicy: {
 			label: 'Legal',
-			heading: 'Cookie Policy',
+			heading: 'Cookie',
+			headingAccent: 'Policy',
 			updated: 'Last updated: May 2025',
 			sections: [
 				{
@@ -414,7 +415,10 @@ export const t = {
 				},
 				{
 					title: '2. How we use cookies',
-					body: 'Raydesite uses only essential technical cookies necessary for the website to function correctly. We do not use cookies for advertising, marketing, behavioral tracking, or any third-party analytics at this time.',
+					body: 'Raydesite uses only essential technical cookies necessary for the website to function correctly. We do ',
+					bodyAccent: 'not',
+					bodyComplement:
+						'use cookies for advertising, marketing, behavioral tracking, or any third-party analytics at this time.',
 				},
 				{
 					title: '3. Types of cookies we use',
@@ -423,7 +427,7 @@ export const t = {
 							type: 'Essential cookies',
 							color: '#D4E8C2',
 							textColor: '#2D5A1B',
-							desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Vercel) for basic site delivery. You cannot opt out of these.',
+							desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Netlify) for basic site delivery. You cannot opt out of these.',
 						},
 					],
 				},
@@ -441,7 +445,7 @@ export const t = {
 				},
 				{
 					title: '7. Contact',
-					body: 'Questions about our cookie practices? Reach us at raydesite@gmail.com.',
+					body: 'Questions about our cookie practices? Reach us at ',
 				},
 			],
 		},
@@ -855,7 +859,8 @@ export const t = {
 		// COOKIE POLICY PAGE
 		cookiePolicy: {
 			label: 'Legal',
-			heading: 'Política de Cookies',
+			heading: 'Política de',
+			headingAccent: 'Cookies',
 			updated: 'Última actualización: Mayo 2025',
 			sections: [
 				{
@@ -863,8 +868,11 @@ export const t = {
 					body: 'Las cookies son pequeños archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Se utilizan ampliamente para hacer que los sitios web funcionen correctamente y para proporcionar funcionalidad básica como recordar tus preferencias.',
 				},
 				{
-					title: '2. Cómo usamos las cookies',
-					body: 'Raydesite utiliza solo cookies técnicas esenciales necesarias para que el sitio web funcione correctamente. No usamos cookies para publicidad, marketing, rastreo de comportamiento ni análisis de terceros en este momento.',
+					title: '2. ¿Cómo usamos las cookies?',
+					body: 'Raydesite utiliza solo cookies técnicas esenciales necesarias para que el sitio web funcione correctamente. ',
+					bodyAccent: 'No',
+					bodyComplement:
+						'usamos cookies para publicidad, marketing, rastreo de comportamiento ni análisis de terceros en este momento.',
 				},
 				{
 					title: '3. Tipos de cookies que usamos',
@@ -873,7 +881,7 @@ export const t = {
 							type: 'Cookies esenciales',
 							color: '#D4E8C2',
 							textColor: '#2D5A1B',
-							desc: 'Requeridas para que el sitio web funcione. Incluyen cookies de sesión establecidas por el navegador y cookies utilizadas por nuestro proveedor de hosting (Vercel) para la entrega básica del sitio. No puedes optar por no usarlas.',
+							desc: 'Requeridas para que el sitio web funcione. Incluyen cookies de sesión establecidas por el navegador y cookies utilizadas por nuestro proveedor de hosting (Netlify) para la entrega básica del sitio. No puedes optar por no usarlas.',
 						},
 					],
 				},
@@ -891,7 +899,7 @@ export const t = {
 				},
 				{
 					title: '7. Contacto',
-					body: '¿Preguntas sobre nuestras prácticas de cookies? Contáctanos en raydesite@gmail.com.',
+					body: '¿Preguntas sobre nuestras prácticas de cookies? Contáctanos en ',
 				},
 			],
 		},

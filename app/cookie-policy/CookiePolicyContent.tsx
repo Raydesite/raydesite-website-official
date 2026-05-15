@@ -29,7 +29,7 @@ export default function CookiePolicyPage() {
 					<div className='mb-16'>
 						<span className='font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#8A8680] flex items-center gap-2 mb-4'>
 							<span className='w-6 h-0.5 bg-[#F5A623]' />
-							Legal
+							{data.label}
 						</span>
 						<h1
 							id='cookie-heading'
@@ -41,11 +41,12 @@ export default function CookiePolicyPage() {
 								lineHeight: 1.0,
 							}}
 						>
-							Cookie <span className='text-[#F5A623]'>Policy</span>
+							{data.heading}{' '}
+							<span className='text-[#F5A623]'>{data.headingAccent}</span>
 						</h1>
 						<div className='mt-4'>
 							<div className='inline-flex items-center bg-[#1A1A1A] text-[#F5A623] font-mono text-xs px-3 py-1.5 rounded-lg'>
-								Last updated: May 2025
+								{data.updated}
 							</div>
 						</div>
 					</div>
@@ -63,13 +64,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								1. What are cookies?
+								{data.sections[0].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								Cookies are small text files stored on your device when you
-								visit a website. They are widely used to make websites work
-								properly and to provide basic functionality like remembering
-								your preferences.
+								{data.sections[0].body}
 							</p>
 						</div>
 
@@ -82,14 +80,14 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								2. How we use cookies
+								{data.sections[1].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								Raydesite uses only essential technical cookies necessary for
-								the website to function correctly. We do{' '}
-								<strong className='text-[#1A1A1A]'>not</strong> use cookies for
-								advertising, marketing, behavioral tracking, or any third-party
-								analytics at this time.
+								{data.sections[1].body}
+								<strong className='text-[#1A1A1A]'>
+									{data.sections[1].bodyAccent}
+								</strong>{' '}
+								{data.sections[1].bodyComplement}
 							</p>
 						</div>
 
@@ -102,17 +100,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								3. Types of cookies we use
+								{data.sections[2].title}
 							</h2>
 							<div className='space-y-4'>
-								{[
-									{
-										type: 'Essential cookies',
-										color: '#D4E8C2',
-										textColor: '#2D5A1B',
-										desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Vercel) for basic site delivery. You cannot opt out of these.',
-									},
-								].map((c) => (
+								{data.sections[2].cookieTypes.map((c) => (
 									<div
 										key={c.type}
 										className='border border-[#E5E5E5] rounded-xl p-4'
@@ -146,13 +137,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								4. Third-party cookies
+								{data.sections[3].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								We currently do not use any third-party cookies, including from
-								Google Analytics, Meta, or any advertising network. If this
-								changes in the future, this policy will be updated accordingly
-								and you will be notified via a cookie consent banner.
+								{data.sections[3].body}
 							</p>
 						</div>
 
@@ -165,14 +153,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								5. Managing cookies
+								{data.sections[4].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								You can control and delete cookies through your browser
-								settings. Please note that disabling essential cookies may
-								affect the functionality of the website. For more information on
-								how to manage cookies, visit your browser&apos;s help
-								documentation.
+								{data.sections[4].body}
 							</p>
 						</div>
 
@@ -185,12 +169,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								6. Changes to this policy
+								{data.sections[5].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								We may update this Cookie Policy as our website evolves. Any
-								changes will be posted on this page with an updated date. We
-								recommend reviewing this page periodically.
+								{data.sections[5].body}
 							</p>
 						</div>
 
@@ -203,10 +185,10 @@ export default function CookiePolicyPage() {
 									fontSize: '1.15rem',
 								}}
 							>
-								7. Contact
+								{data.sections[6].title}
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
-								Questions about our cookie practices? Reach us at{' '}
+								{data.sections[6].body}
 								<a
 									href='mailto:raydesite@gmail.com'
 									className='text-[#1A1A1A] font-bold underline underline-offset-4 hover:text-[#F5A623] transition-colors'
