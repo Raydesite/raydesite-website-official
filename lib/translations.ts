@@ -301,11 +301,11 @@ export const t = {
 			label: 'Legal',
 			heading: 'Privacy',
 			headingAccent: 'Policy',
-			updated: 'Last updated: May 2025',
+			updated: 'Last updated: June 2026',
 			sections: [
 				{
 					title: '1. Who we are',
-					body: 'Raydesite is a software development studio based in Atlanta, Georgia, USA. We build websites, web apps, mobile apps, and digital products for clients in the US and internationally. You can reach us at ',
+					body: 'Raydesite is a software development studio based in West Palm Beach, Florida, USA. We build websites, web apps, mobile apps, and digital products for clients in the US and internationally. You can reach us at ',
 				},
 				{
 					title: '2. What information we collect',
@@ -316,7 +316,7 @@ export const t = {
 						'A description of your project or inquiry',
 					],
 					footer:
-						'We do not collect any other personal data. We do not use cookies for tracking, analytics, or advertising purposes.',
+						'We do not collect any other personal data. We do not use cookies for tracking, analytics, or advertising purposes. We comply with the Florida Digital Bill of Rights (FDBR) and the Florida Information Protection Act (FIPA).',
 				},
 				{
 					title: '3. How we use your information',
@@ -325,27 +325,35 @@ export const t = {
 						'Respond to your inquiry or project request',
 						'Send you a project proposal if applicable',
 						'Communicate during the development process',
+						'Fulfill contractual obligations as outlined in your project agreement',
 					],
 					footer:
-						'We will never sell, rent, or share your personal information with third parties. We do not send marketing emails or newsletters.',
+						'We will never sell, rent, or share your personal information with third parties. We do not send marketing emails or newsletters without your explicit consent.',
 				},
 				{
-					title: '4. Data retention',
-					body: 'We retain your contact information only for as long as necessary to complete your project or respond to your inquiry. If no project agreement is reached, your information is deleted within 90 days of your initial contact.',
+					title: '4. Data retention & deletion',
+					body: 'We retain your contact information only for as long as necessary to complete your project or respond to your inquiry. If no project agreement is reached, your information is deleted within 90 days of your initial contact. For active projects, we retain your data for the duration of the contract plus 2 years, or as required by Florida law and our professional obligations.',
 				},
 				{
-					title: '5. Your rights',
+					title: '5. Your rights under Florida law',
 					body: 'You have the right to:',
 					list: [
 						'Request access to the personal data we hold about you',
 						'Request correction or deletion of your data',
 						'Withdraw consent at any time by contacting us',
+						'Opt out of any future communications',
+						'Receive a copy of your data in a portable format',
 					],
-					footer: 'To exercise any of these rights, email us at ',
+					footer:
+						'We will respond within 30 days. To exercise any of these rights, contact us at ',
 				},
 				{
-					title: '6. Changes to this policy',
-					body: 'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. We encourage you to review this page periodically.',
+					title: '6. Data security',
+					body: 'We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, alteration, or destruction. However, no method of transmission over the Internet is 100% secure.',
+				},
+				{
+					title: '7. Changes to this policy',
+					body: 'We may update this Privacy Policy from time to time to comply with Florida law changes or improve our practices. Any changes will be posted on this page with an updated date. We encourage you to review this page periodically.',
 				},
 			],
 		},
@@ -355,11 +363,11 @@ export const t = {
 			label: 'Legal',
 			heading: 'Terms of ',
 			headingAccent: 'Service',
-			updated: 'Last updated: May 2025',
+			updated: 'Last updated: June 2026',
 			sections: [
 				{
 					title: '1. Agreement to terms',
-					body: 'By engaging Raydesite for any software development service, you agree to these Terms of Service. These terms govern the relationship between Raydesite (Atlanta, Georgia, USA) and the client from the moment a project proposal is signed and accepted.',
+					body: 'By engaging Raydesite for any software development service, you agree to these Terms of Service. These terms govern the relationship between Raydesite (West Palm Beach, Florida, USA) and the client from the moment a project proposal is signed and accepted.',
 				},
 				{
 					title: '2. Project proposal & approval',
@@ -369,6 +377,7 @@ export const t = {
 						'Project timeline and milestones',
 						'Pricing and payment schedule',
 						'Technical requirements and assumptions',
+						'Intellectual property ownership terms',
 					],
 					footer:
 						'The client must review, approve, and sign the proposal before work begins. By signing, the client confirms they have read, understood, and agreed to all terms and requirements outlined in the proposal.',
@@ -383,7 +392,7 @@ export const t = {
 					title: '4. Payment terms',
 					body: 'All prices are in US dollars (USD). Payment schedules are defined in the project proposal. Raydesite reserves the right to pause or stop work if payments are not received according to the agreed schedule.',
 					footer:
-						'Late payments may incur a fee of 5% per month on the outstanding balance, as outlined in the project proposal.',
+						'Late payments may incur a fee of 5% per month on the outstanding balance, as outlined in the project proposal. Raydesite complies with all applicable Florida payment and collection laws.',
 				},
 				{
 					title: '5. Scope changes',
@@ -391,7 +400,7 @@ export const t = {
 				},
 				{
 					title: '6. Intellectual property',
-					body: 'Upon receipt of full payment, the client receives full ownership of all custom code and assets developed specifically for their project. Raydesite retains the right to showcase the project in our portfolio.',
+					body: 'Upon receipt of full payment, the client receives full ownership of all custom code and assets developed specifically for their project. Raydesite retains the right to use general tools, frameworks, and methodologies developed during the project, and to showcase the project in our portfolio (unless otherwise agreed in writing).',
 				},
 				{
 					title: '7. Client responsibilities',
@@ -401,14 +410,19 @@ export const t = {
 						'Review and provide feedback within the agreed timeframes',
 						'Designate a single point of contact for project communication',
 						'Not use deliverables for any illegal or unethical purposes',
+						'Comply with applicable Florida and federal laws in use of deliverables',
 					],
 				},
 				{
-					title: '8. Governing law',
-					body: 'These terms are governed by the laws of the State of Georgia, United States. Any disputes will be resolved through good-faith negotiation. If unresolved, disputes will be subject to the jurisdiction of the courts of Georgia, USA.',
+					title: '8. Limitation of liability',
+					body: 'Raydesite is not liable for any indirect, incidental, special, or consequential damages arising from the use of or inability to use deliverables. Our total liability shall not exceed the amount paid by the client for the project.',
 				},
 				{
-					title: '9. Contact',
+					title: '9. Governing law & jurisdiction',
+					body: 'These terms are governed by the laws of the State of Florida, United States, without regard to conflict of laws. Both parties agree to submit to the exclusive jurisdiction of the state and federal courts located in Palm Beach County, Florida for resolution of any disputes.',
+				},
+				{
+					title: '10. Contact',
 					body: 'For any questions about these terms, contact us at ',
 				},
 			],
@@ -419,7 +433,7 @@ export const t = {
 			label: 'Legal',
 			heading: 'Cookie',
 			headingAccent: 'Policy',
-			updated: 'Last updated: May 2025',
+			updated: 'Last updated: June 2026',
 			sections: [
 				{
 					title: '1. What are cookies?',
@@ -430,7 +444,7 @@ export const t = {
 					body: 'Raydesite uses only essential technical cookies necessary for the website to function correctly. We do ',
 					bodyAccent: 'not',
 					bodyComplement:
-						'use cookies for advertising, marketing, behavioral tracking, or any third-party analytics at this time.',
+						'use cookies for advertising, marketing, behavioral tracking, profiling, or third-party analytics. We comply with Florida privacy laws regarding cookie disclosure and consent.',
 				},
 				{
 					title: '3. Types of cookies we use',
@@ -439,24 +453,28 @@ export const t = {
 							type: 'Essential cookies',
 							color: '#D4E8C2',
 							textColor: '#2D5A1B',
-							desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Netlify) for basic site delivery. You cannot opt out of these.',
+							desc: 'Required for the website to function. These include session cookies set by the browser and cookies used by our hosting provider (Netlify) for basic site delivery. You cannot opt out of these as they are necessary for basic functionality.',
 						},
 					],
 				},
 				{
 					title: '4. Third-party cookies',
-					body: 'We currently do not use any third-party cookies, including from Google Analytics, Meta, or any advertising network. If this changes in the future, this policy will be updated accordingly and you will be notified via a cookie consent banner.',
+					body: 'We currently do not use any third-party cookies, including from Google Analytics, Meta, or any advertising network. If we implement third-party cookies in the future, this policy will be updated, and we will provide a cookie consent banner allowing you to opt in or out.',
 				},
 				{
-					title: '5. Managing cookies',
-					body: "You can control and delete cookies through your browser settings. Please note that disabling essential cookies may affect the functionality of the website. For more information on how to manage cookies, visit your browser's help documentation.",
+					title: '5. Your cookie choices',
+					body: 'You can control and delete cookies through your browser settings. Most browsers allow you to reject cookies or alert you when a cookie is being sent. Please note that disabling essential cookies may affect the functionality and appearance of the website.',
 				},
 				{
-					title: '6. Changes to this policy',
-					body: 'We may update this Cookie Policy as our website evolves. Any changes will be posted on this page with an updated date. We recommend reviewing this page periodically.',
+					title: '6. Florida law compliance',
+					body: 'This Cookie Policy complies with the Florida Digital Bill of Rights (FDBR) and Florida data privacy requirements. We do not require consent for essential cookies, as they are necessary for website function.',
 				},
 				{
-					title: '7. Contact',
+					title: '7. Changes to this policy',
+					body: 'We may update this Cookie Policy as our website evolves or as Florida law changes. Any changes will be posted on this page with an updated date. We recommend reviewing this page periodically.',
+				},
+				{
+					title: '8. Contact',
 					body: 'Questions about our cookie practices? Reach us at ',
 				},
 			],
@@ -755,11 +773,11 @@ export const t = {
 			label: 'Legal',
 			heading: 'Política de',
 			headingAccent: 'Privacidad',
-			updated: 'Última actualización: Mayo 2025',
+			updated: 'Última actualización: Junio 2026',
 			sections: [
 				{
 					title: '1. ¿Quiénes somos?',
-					body: 'Raydesite es un estudio de desarrollo de software basado en Atlanta, Georgia, USA. Creamos sitios web, aplicaciones web, aplicaciones móviles y productos digitales para clientes en USA e internacionalmente. Puedes contactarnos en ',
+					body: 'Raydesite es un estudio de desarrollo de software basado en West Palm Beach, Florida, USA. Creamos sitios web, aplicaciones web, aplicaciones móviles y productos digitales para clientes en USA e internacionalmente. Puedes contactarnos en ',
 				},
 				{
 					title: '2. ¿Qué información recopilamos?',
@@ -770,7 +788,7 @@ export const t = {
 						'Una descripción de tu proyecto o consulta',
 					],
 					footer:
-						'No recopilamos ningún otro dato personal. No usamos cookies para rastreo, análisis o publicidad.',
+						'No recopilamos ningún otro dato personal. No usamos cookies para rastreo, análisis o publicidad. Cumplimos con la Ley de Derechos Digitales de Florida (FDBR) y la Ley de Protección de Información de Florida (FIPA).',
 				},
 				{
 					title: '3. ¿Cómo usamos tu información?',
@@ -779,28 +797,35 @@ export const t = {
 						'Responder a tu consulta o solicitud de proyecto',
 						'Enviarte una propuesta de proyecto si es aplicable',
 						'Comunicarnos durante el proceso de desarrollo',
+						'Cumplir con nuestras obligaciones contractuales',
 					],
 					footer:
-						'Nunca venderemos, alquilaremos ni compartiremos tu información personal con terceros. No enviamos correos de marketing ni boletines.',
+						'Nunca venderemos, alquilaremos ni compartiremos tu información personal con terceros. No enviamos correos de marketing sin tu consentimiento explícito.',
 				},
 				{
-					title: '4. Retención de datos',
-					body: 'Retenemos tu información de contacto solo el tiempo necesario para completar tu proyecto o responder a tu consulta. Si no se llega a un acuerdo de proyecto, tu información se elimina dentro de 90 días de tu contacto inicial.',
+					title: '4. Retención y eliminación de datos',
+					body: 'Retenemos tu información de contacto solo el tiempo necesario para completar tu proyecto o responder a tu consulta. Si no se llega a un acuerdo de proyecto, tu información se elimina dentro de 90 días de tu contacto inicial. Para proyectos activos, retenemos tus datos durante la duración del contrato más 2 años, o según lo requiera la ley de Florida.',
 				},
 				{
-					title: '5. Tus derechos',
+					title: '5. Tus derechos bajo la ley de Florida',
 					body: 'Tienes derecho a:',
 					list: [
 						'Solicitar acceso a los datos personales que tenemos sobre ti',
 						'Solicitar corrección o eliminación de tus datos',
 						'Retirar el consentimiento en cualquier momento contactándonos',
+						'Optar por no recibir futuras comunicaciones',
+						'Recibir una copia de tus datos en formato portable',
 					],
 					footer:
-						'Para ejercer cualquiera de estos derechos, envíanos un correo a ',
+						'Responderemos dentro de 30 días. Para ejercer cualquiera de estos derechos, contáctanos en ',
 				},
 				{
-					title: '6. Cambios a esta política',
-					body: 'Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio será publicado en esta página con una fecha actualizada. Te animamos a revisar esta página periódicamente.',
+					title: '6. Seguridad de datos',
+					body: 'Implementamos medidas de seguridad razonables administrativas, técnicas y físicas para proteger tu información personal contra acceso, alteración o destrucción no autorizada. Sin embargo, ningún método de transmisión por Internet es 100% seguro.',
+				},
+				{
+					title: '7. Cambios a esta política',
+					body: 'Podemos actualizar esta Política de Privacidad de vez en cuando para cumplir con cambios en la ley de Florida o mejorar nuestras prácticas. Cualquier cambio será publicado en esta página con una fecha actualizada. Te animamos a revisar esta página periódicamente.',
 				},
 			],
 		},
@@ -810,11 +835,11 @@ export const t = {
 			label: 'Legal',
 			heading: 'Términos de ',
 			headingAccent: 'Servicio',
-			updated: 'Última actualización: Mayo 2025',
+			updated: 'Última actualización: Junio 2026',
 			sections: [
 				{
 					title: '1. Aceptación de términos',
-					body: 'Al contratar a Raydesite para cualquier servicio de desarrollo de software, aceptas estos Términos de Servicio. Estos términos rigen la relación entre Raydesite (Atlanta, Georgia, USA) y el cliente desde el momento en que una propuesta de proyecto es firmada y aceptada.',
+					body: 'Al contratar a Raydesite para cualquier servicio de desarrollo de software, aceptas estos Términos de Servicio. Estos términos rigen la relación entre Raydesite (West Palm Beach, Florida, USA) y el cliente desde el momento en que una propuesta de proyecto es firmada y aceptada.',
 				},
 				{
 					title: '2. Propuesta de proyecto y aprobación',
@@ -824,6 +849,7 @@ export const t = {
 						'Cronograma del proyecto e hitos',
 						'Precios y calendario de pagos',
 						'Requisitos técnicos y suposiciones',
+						'Términos de propiedad intelectual',
 					],
 					footer:
 						'El cliente debe revisar, aprobar y firmar la propuesta antes de que comience el trabajo. Al firmar, el cliente confirma que ha leído, comprendido y aceptado todos los términos y requisitos establecidos en la propuesta.',
@@ -838,7 +864,7 @@ export const t = {
 					title: '4. Términos de pago',
 					body: 'Todos los precios están en dólares estadounidenses (USD). Los calendarios de pago se definen en la propuesta del proyecto. Raydesite se reserva el derecho de pausar o detener el trabajo si los pagos no se reciben según el cronograma acordado.',
 					footer:
-						'Los pagos atrasados pueden incurrir en una tarifa del 5% mensual sobre el saldo pendiente, como se establece en la propuesta del proyecto.',
+						'Los pagos atrasados pueden incurrir en una tarifa del 5% mensual sobre el saldo pendiente. Raydesite cumple con todas las leyes de Florida aplicables sobre pagos.',
 				},
 				{
 					title: '5. Cambios en el alcance',
@@ -846,7 +872,7 @@ export const t = {
 				},
 				{
 					title: '6. Propiedad intelectual',
-					body: 'Tras recibir el pago completo, el cliente recibe la propiedad total de todo el código personalizado y activos desarrollados específicamente para su proyecto. Raydesite se reserva el derecho de mostrar el proyecto en nuestro portafolio.',
+					body: 'Tras recibir el pago completo, el cliente recibe la propiedad total de todo el código personalizado y activos desarrollados específicamente para su proyecto. Raydesite se reserva el derecho de usar herramientas, marcos y metodologías generales desarrolladas durante el proyecto, y de mostrar el proyecto en nuestro portafolio (a menos que se acuerde lo contrario por escrito).',
 				},
 				{
 					title: '7. Responsabilidades del cliente',
@@ -856,14 +882,19 @@ export const t = {
 						'Revisar y proporcionar retroalimentación dentro de los plazos acordados',
 						'Designar un único punto de contacto para la comunicación del proyecto',
 						'No usar los entregables para propósitos ilegales o no éticos',
+						'Cumplir con la ley de Florida y leyes federales aplicables en el uso de entregables',
 					],
 				},
 				{
-					title: '8. Ley aplicable',
-					body: 'Estos términos se rigen por las leyes del Estado de Georgia, Estados Unidos. Cualquier disputa será resuelta a través de negociación de buena fe. Si no se resuelve, las disputas estarán sujetas a la jurisdicción de los tribunales de Georgia, USA.',
+					title: '8. Limitación de responsabilidad',
+					body: 'Raydesite no es responsable de daños indirectos, incidentales, especiales o consecuentes derivados del uso o imposibilidad de usar los entregables. Nuestra responsabilidad total no excederá la cantidad pagada por el cliente para el proyecto.',
 				},
 				{
-					title: '9. Contacto',
+					title: '9. Ley aplicable y jurisdicción',
+					body: 'Estos términos se rigen por las leyes del Estado de Florida, Estados Unidos, sin consideración de conflicto de leyes. Ambas partes aceptan someterse a la jurisdicción exclusiva de los tribunales estatales y federales ubicados en el Condado de Palm Beach, Florida para la resolución de cualquier disputa.',
+				},
+				{
+					title: '10. Contacto',
 					body: 'Para cualquier pregunta sobre estos términos, contáctanos en ',
 				},
 			],
@@ -874,7 +905,7 @@ export const t = {
 			label: 'Legal',
 			heading: 'Política de',
 			headingAccent: 'Cookies',
-			updated: 'Última actualización: Mayo 2025',
+			updated: 'Última actualización: Junio 2026',
 			sections: [
 				{
 					title: '1. ¿Qué son las cookies?',
@@ -885,7 +916,7 @@ export const t = {
 					body: 'Raydesite utiliza solo cookies técnicas esenciales necesarias para que el sitio web funcione correctamente. ',
 					bodyAccent: 'No',
 					bodyComplement:
-						'usamos cookies para publicidad, marketing, rastreo de comportamiento ni análisis de terceros en este momento.',
+						'usamos cookies para publicidad, marketing, rastreo de comportamiento ni análisis de terceros. Cumplimos con las leyes de privacidad de Florida respecto a divulgación y consentimiento de cookies.',
 				},
 				{
 					title: '3. Tipos de cookies que usamos',
@@ -894,24 +925,28 @@ export const t = {
 							type: 'Cookies esenciales',
 							color: '#D4E8C2',
 							textColor: '#2D5A1B',
-							desc: 'Requeridas para que el sitio web funcione. Incluyen cookies de sesión establecidas por el navegador y cookies utilizadas por nuestro proveedor de hosting (Netlify) para la entrega básica del sitio. No puedes optar por no usarlas.',
+							desc: 'Requeridas para que el sitio web funcione. Incluyen cookies de sesión establecidas por el navegador y cookies utilizadas por nuestro proveedor de hosting (Netlify) para la entrega básica del sitio. No puedes optar por no usarlas ya que son necesarias para funcionalidad básica.',
 						},
 					],
 				},
 				{
 					title: '4. Cookies de terceros',
-					body: 'Actualmente no usamos cookies de terceros, incluyendo Google Analytics, Meta, ni ninguna red publicitaria. Si esto cambia en el futuro, esta política será actualizada en consecuencia y serás notificado a través de un banner de consentimiento de cookies.',
+					body: 'Actualmente no usamos cookies de terceros, incluyendo Google Analytics, Meta, ni ninguna red publicitaria. Si implementamos cookies de terceros en el futuro, esta política será actualizada y proporcionaremos un banner de consentimiento de cookies permitiéndote optar por dentro o fuera.',
 				},
 				{
-					title: '5. Gestionar cookies',
-					body: 'Puedes controlar y eliminar cookies a través de la configuración de tu navegador. Ten en cuenta que desactivar cookies esenciales puede afectar la funcionalidad del sitio web. Para más información sobre cómo gestionar cookies, visita la documentación de ayuda de tu navegador.',
+					title: '5. Tus opciones de cookies',
+					body: 'Puedes controlar y eliminar cookies a través de la configuración de tu navegador. La mayoría de navegadores te permiten rechazar cookies o alertarte cuando se envía una cookie. Ten en cuenta que desactivar cookies esenciales puede afectar la funcionalidad y apariencia del sitio web.',
 				},
 				{
-					title: '6. Cambios a esta política',
-					body: 'Podemos actualizar esta Política de Cookies conforme nuestro sitio web evoluciona. Cualquier cambio será publicado en esta página con una fecha actualizada. Recomendamos revisar esta página periódicamente.',
+					title: '6. Cumplimiento con la ley de Florida',
+					body: 'Esta Política de Cookies cumple con la Ley de Derechos Digitales de Florida (FDBR) y requisitos de privacidad de datos de Florida. No requerimos consentimiento para cookies esenciales, ya que son necesarias para la función del sitio web.',
 				},
 				{
-					title: '7. Contacto',
+					title: '7. Cambios a esta política',
+					body: 'Podemos actualizar esta Política de Cookies conforme nuestro sitio web evoluciona o cambian las leyes de Florida. Cualquier cambio será publicado en esta página con una fecha actualizada. Recomendamos revisar esta página periódicamente.',
+				},
+				{
+					title: '8. Contacto',
 					body: '¿Preguntas sobre nuestras prácticas de cookies? Contáctanos en ',
 				},
 			],

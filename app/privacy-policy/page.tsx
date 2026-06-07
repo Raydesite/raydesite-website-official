@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import PrivacyPolicyContent from './PrivacyPolicyContent';
 
 export const metadata: Metadata = {
-	title: 'Privacy Policy', // → "Privacy Policy | Raydesite" gracias al template
+	title: 'Privacy Policy', // → "Privacy Policy | Raydesite"
 	description: 'How Raydesite handles your personal information.',
 	alternates: { canonical: 'https://raydesite.com/privacy-policy' },
 };

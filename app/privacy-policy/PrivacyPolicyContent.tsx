@@ -209,6 +209,22 @@ export default function PrivacyPolicyPage() {
 								{data.sections[5].body}
 							</p>
 						</div>
+
+						<div className='bg-white border-2 border-[#1A1A1A] rounded-2xl p-8 hover:shadow-[4px_4px_0_#1A1A1A] transition-all duration-200'>
+							<h2
+								className='mb-3'
+								style={{
+									fontFamily: 'Syne, sans-serif',
+									fontWeight: 700,
+									fontSize: '1.15rem',
+								}}
+							>
+								{data.sections[6].title}
+							</h2>
+							<p className='text-[#8A8680] leading-relaxed'>
+								{data.sections[6].body}
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>

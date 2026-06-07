@@ -189,6 +189,29 @@ export default function CookiePolicyPage() {
 							</h2>
 							<p className='text-[#8A8680] leading-relaxed'>
 								{data.sections[6].body}
+								{/* <a
+									href='mailto:raydesite@gmail.com'
+									className='text-[#1A1A1A] font-bold underline underline-offset-4 hover:text-[#F5A623] transition-colors'
+								>
+									raydesite@gmail.com
+								</a>
+								. */}
+							</p>
+						</div>
+
+						<div className='bg-white border-2 border-[#1A1A1A] rounded-2xl p-8 hover:shadow-[4px_4px_0_#1A1A1A] transition-all duration-200'>
+							<h2
+								className='mb-3'
+								style={{
+									fontFamily: 'Syne, sans-serif',
+									fontWeight: 700,
+									fontSize: '1.15rem',
+								}}
+							>
+								{data.sections[7].title}
+							</h2>
+							<p className='text-[#8A8680] leading-relaxed'>
+								{data.sections[7].body}
 								<a
 									href='mailto:raydesite@gmail.com'
 									className='text-[#1A1A1A] font-bold underline underline-offset-4 hover:text-[#F5A623] transition-colors'
