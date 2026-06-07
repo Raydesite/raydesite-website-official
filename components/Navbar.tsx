@@ -108,13 +108,13 @@ export default function Navbar() {
 				>
 					{navItems.map((item) => (
 						<li key={item.label}>
-							<a
+							<Link
 								href={item.href}
 								className='relative font-mono text-sm font-bold text-[#1A1A1A] uppercase tracking-widest group'
 							>
 								{item.label}
 								<span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F5A623] group-hover:w-full transition-all duration-200' />
-							</a>
+							</Link>
 						</li>
 					))}
 				</ul>
@@ -130,14 +130,14 @@ export default function Navbar() {
 						{lang === 'en' ? 'ES' : 'EN'}
 					</button>
 
-					<a
-						href='#products'
+					<Link
+						href={href('#products')}
 						className='font-mono text-xs font-bold uppercase tracking-widest text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F4F3F0] transition-all duration-200'
 					>
 						{tr.servicesBtn}
-					</a>
-					<a
-						href='#quote'
+					</Link>
+					<Link
+						href={href('#quote')}
 						className='font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] text-[#1A1A1A] border-2 border-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#F5A623] transition-all duration-200 flex items-center gap-2'
 						aria-label={tr.quoteBtn}
 					>
@@ -153,7 +153,7 @@ export default function Navbar() {
 							<path d='M13 5l7 7-7 7' />
 						</svg>
 						{tr.quoteBtn}
-					</a>
+					</Link>
 				</div>
 
 				{/* Mobile menu button */}
@@ -192,13 +192,13 @@ export default function Navbar() {
 					<ul className='flex flex-col gap-4 mb-6'>
 						{navItems.map((item) => (
 							<li key={item.label}>
-								<a
+								<Link
 									href={item.href}
 									className='font-mono font-bold text-lg uppercase tracking-widest text-[#1A1A1A] hover:text-[#F5A623] transition-colors'
 									onClick={() => setMenuOpen(false)}
 								>
 									{item.label}
-								</a>
+								</Link>
 							</li>
 						))}
 					</ul>
@@ -210,18 +210,20 @@ export default function Navbar() {
 						>
 							{lang === 'en' ? 'ES' : 'EN'}
 						</button>
-						<a
-							href='#products'
+						<Link
+							href={href('#products')}
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
+							onClick={() => setMenuOpen(false)}
 						>
 							{tr.servicesBtn}
-						</a>
-						<a
-							href='#quote'
+						</Link>
+						<Link
+							href={href('#quote')}
 							className='flex-1 text-center font-mono text-xs font-bold uppercase tracking-widest bg-[#F5A623] border-2 border-[#1A1A1A] px-4 py-2 rounded-full'
+							onClick={() => setMenuOpen(false)}
 						>
 							{tr.getQuoteMobile}
-						</a>
+						</Link>
 					</div>
 				</div>
 			)}
